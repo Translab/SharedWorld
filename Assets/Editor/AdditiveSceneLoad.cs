@@ -10,11 +10,19 @@ using UnityEditor.SceneManagement;
 public class AdditiveSceneLoad : MonoBehaviour
 {
 	// Create a new drop-down menu in Editor named "Examples" and a new option called "Open Scene"
-	[MenuItem("Custome/Open Scene")]
+	[MenuItem("Custom/Open Scene")]
 	static void OpenScene()
 	{
 		//Open the Scene in the Editor (do not enter Play Mode)
 		EditorSceneManager.OpenScene("Assets/Mengyu.unity", OpenSceneMode.Additive);
 		EditorSceneManager.OpenScene("Assets/Cindy.unity", OpenSceneMode.Additive);
+		EditorSceneManager.OpenScene("Assets/Jing.unity", OpenSceneMode.Additive);
+		EditorSceneManager.OpenScene("Assets/Gustavo.unity", OpenSceneMode.Additive);
+		EditorSceneManager.OpenScene("Assets/Yin.unity", OpenSceneMode.Additive);
+		EditorSceneManager.OpenScene("Assets/Ehsan.unity", OpenSceneMode.Additive);
+		EditorSceneManager.OpenScene("Assets/Tim.unity", OpenSceneMode.Additive);
+		EditorSceneManager.OpenScene("Assets/Weidi.unity", OpenSceneMode.Additive);	
+		EditorSceneManager.OpenScene("Assets/Zhenyu.unity", OpenSceneMode.Additive);
+		EditorSceneManager.OpenScene("Assets/Anshul.unity", OpenSceneMode.Additive);
 	}
 }
