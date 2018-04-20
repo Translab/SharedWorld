@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 172b17b92d31d4a6881c07a3c4c5ba00
-timeCreated: 1521730635
+guid: b52706bb2c4ca6f4b9f88c197fccb49c
+timeCreated: 1524268077
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,20 +9,16 @@ ModelImporter:
     100002: Default
     400000: //RootNode
     400002: Default
+    2100000: DefaultMat
     2300000: Default
     3300000: Default
     4300000: Default
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Gold
-    second: {fileID: 2100000, guid: fdbfa2c5e442c4e2eb6de8a3bdf2a271, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -60,6 +56,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
