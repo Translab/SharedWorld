@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 54498605851429648}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: generator
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,4 +125,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj: {fileID: 1851041463780960}
   father: {fileID: 0}
-  maxAge: 7
+  maxAge: 5

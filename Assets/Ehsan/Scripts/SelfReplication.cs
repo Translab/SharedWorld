@@ -12,6 +12,8 @@ public class SelfReplication : MonoBehaviour {
     private bool givenbirth1st = true;
     public float maxAge = 5f;
     private float timer = 0f;
+
+    private bool untouched = true;
     // Use this for initialization
     IEnumerator Start()
     {
@@ -30,8 +32,9 @@ public class SelfReplication : MonoBehaviour {
 
         if (!givenbirth1st)
         {
-            if (GetComponent<Rigidbody>().velocity.magnitude < 0.3f * transform.localScale.x)
+            if (GetComponent<Rigidbody>().velocity.magnitude < 0.8f * transform.localScale.x)
             {
+                
                 GiveBirth();
                 givenbirth1st = true;
             }
@@ -55,21 +58,35 @@ public class SelfReplication : MonoBehaviour {
 
         if (GetComponent<Rigidbody>().velocity.magnitude > 5f)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
     }
 
     void GiveBirth()
     {
-        Vector3 newpos = transform.position + new Vector3(Random.Range(-0.05f, 0.05f)* transform.localScale.x, transform.localScale.y * 1.05f, Random.Range(-0.05f, 0.05f)*transform.localScale.x);
-        var o = Instantiate(obj, newpos, transform.rotation);
-        o.transform.Rotate(Vector3.up, 10f);
-        o.name = "cb";
-        o.GetComponent<SelfReplication>().father = father;
-        if (father)
+        if (untouched)
         {
-            o.transform.SetParent(father);
+            Vector3 newpos = transform.position + new Vector3(Random.Range(-0.05f, 0.05f) * transform.localScale.x, transform.localScale.y * 1.05f, Random.Range(-0.05f, 0.05f) * transform.localScale.x);
+            var o = Instantiate(obj, newpos, transform.rotation);
+            o.transform.Rotate(Vector3.up, 10f);
+            o.name = "cb";
+            o.GetComponent<SelfReplication>().father = father;
+            if (father)
+            {
+                o.transform.SetParent(father);
+            }
+        }
+
+    }
+
+    
+    void OnCollisionStay(Collision col)
+    {
+        if (!col.transform.CompareTag("generator"))
+        {
+            untouched = false;
         }
     }
+
 }
