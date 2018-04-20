@@ -738,8 +738,8 @@ PlayerSettings:
     Unity_Ads: 0
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: dded5d89-6cc4-4a8d-8982-6d8b02f999e4
-  projectName: Social_VR_Networking
+  cloudProjectId: 2c79bdec-513a-4092-a673-948bfd00e1f3
+  projectName: sharedWorld
   organizationId: mengyuchen
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
