@@ -5,6 +5,39 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/VRNetWork.unity
+  - enabled: 0
+    path: Assets/CoreAssets/Scenes/VRNetWork.unity
     guid: 0a1cb6a58efacf142a41bcb939955b3e
+  - enabled: 1
+    path: Assets/MainWorld.unity
+    guid: 8ded9afe51f225b4da35ed9f815d76a4
+  - enabled: 1
+    path: Assets/Mengyu.unity
+    guid: 228118b3274411f4f8920ec59f89f261
+  - enabled: 1
+    path: Assets/Cindy.unity
+    guid: 96b574efab0f9dc48b963dee747c5c69
+  - enabled: 1
+    path: Assets/Jing.unity
+    guid: 2aa7e7633615705428eefaea89b4493a
+  - enabled: 1
+    path: Assets/Gustavo.unity
+    guid: c25dab151e4a93b4fa76b2c760ee6ffe
+  - enabled: 1
+    path: Assets/Yin.unity
+    guid: 27e96abe66c2e7b4f95a05b52c2b10a9
+  - enabled: 1
+    path: Assets/Ehsan.unity
+    guid: 449019c55d84ee84cba0cbd1786a4acd
+  - enabled: 1
+    path: Assets/Tim.unity
+    guid: a0786857251f87f4bac2cb087a49fb17
+  - enabled: 1
+    path: Assets/Weidi.unity
+    guid: 33118f868068b974a8fd21b71ac81358
+  - enabled: 1
+    path: Assets/Zhenyu.unity
+    guid: fb755c91d0961584aa434180854c1513
+  - enabled: 1
+    path: Assets/Anshul.unity
+    guid: 4f742c6efa60046419b16db4936a6f02

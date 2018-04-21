@@ -1,3 +1,10 @@
+v1.13.1
+  PUNVoice: 
+  FIXED: The reliability setting is now properly applied when sending voice clips.
+  FIXED: Compatibility with Unity 2018 beta.
+  FIXED: Compatibility with UWP, as long as you chose IL2CPP as scripting backend. Make sure to add the capability "Microphone".
+  UPDATED: To PUN v1.89.
+
 v1.13
   PUNVoice:
 ADDED: platform plugins (AEC, native microphone input, iOS ForceToSpeaker)

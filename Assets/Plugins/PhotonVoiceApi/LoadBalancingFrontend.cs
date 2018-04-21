@@ -26,7 +26,7 @@ namespace ExitGames.Client.Photon.Voice
         /// <summary>
         /// Start of voice event codes range
         /// Change if conflicts with other code.
-        /// </summary>{    
+        /// </summary>{
         public const byte Code0 = 201;
         static public byte GetCode(int channelID)
         {
@@ -67,12 +67,12 @@ namespace ExitGames.Client.Photon.Voice
         public void LogInfo(string fmt, params object[] args) { this.DebugReturn(DebugLevel.INFO, string.Format(fmt, args)); }
         public void LogDebug(string fmt, params object[] args) { this.DebugReturn(DebugLevel.ALL, string.Format(fmt, args)); }
 
-        // Assigns channel per known voice type reserving channel 0 for user events. 
+        // Assigns channel per known voice type reserving channel 0 for user events.
         // For more control, set channel explicitly when creating a voice.
         public int AssignChannel(VoiceInfo v)
         {
             // 0 is for user events
-            return 1 + Array.IndexOf(Enum.GetValues(typeof(Codec)), v.Codec);            
+            return 1 + Array.IndexOf(Enum.GetValues(typeof(Codec)), v.Codec);
         }
 
         public bool IsChannelJoined(int channelId) { return this.State == LoadBalancing.ClientState.Joined; }
@@ -101,7 +101,7 @@ namespace ExitGames.Client.Photon.Voice
         /// <summary>Register a method to be called when an event got dispatched. Gets called at the end of OnEvent().</summary>
         /// <see cref="ExitGames.Client.Photon.LoadBalancing.LoadBalancingClient.OnStateChangeAction"/>
         new public Action<LoadBalancing.ClientState> OnStateChangeAction { get; set; } // called by voice client action, so user still can use action
-        
+
         /// <summary>Creates Client instance</summary>
         public LoadBalancingFrontend(ConnectionProtocol connectionProtocol = ConnectionProtocol.Udp) : base(connectionProtocol)
         {
@@ -166,7 +166,7 @@ namespace ExitGames.Client.Photon.Voice
                     {
                         this.loadBalancingPeer.OpChangeGroups(new byte[0], null);
                     }
-                }                
+                }
             }
         }
 
@@ -179,7 +179,7 @@ namespace ExitGames.Client.Photon.Voice
         public void SendVoicesInfo(IEnumerable<LocalVoice> voices, int channelId, int targetPlayerId)
         {
             object content = voiceClient.buildVoicesInfo(voices, true);
-            
+
         var opt = new LoadBalancing.RaiseEventOptions();
             opt.SequenceChannel = (byte) channelId;
             if (targetPlayerId != 0)
@@ -201,7 +201,7 @@ namespace ExitGames.Client.Photon.Voice
         {
             var voices = voiceClient.LocalVoices.Where(x => x.DebugEchoMode);
             if (voices.Count() > 0)
-            { 
+            {
                 SendVoicesInfo(voices, channelId, this.LocalPlayer.ID);
             }
         }
@@ -209,7 +209,7 @@ namespace ExitGames.Client.Photon.Voice
         public void SendVoiceRemove(LocalVoice voice, int channelId, int targetPlayerId)
         {
             object content = voiceClient.buildVoiceRemoveMessage(voice);
-            
+
 
             var opt = new LoadBalancing.RaiseEventOptions();
             opt.SequenceChannel = (byte) channelId;
@@ -226,7 +226,7 @@ namespace ExitGames.Client.Photon.Voice
         public void SendFrame(ArraySegment<byte> data, byte evNumber, byte voiceId, int channelId, LocalVoice localVoice)
         {
             object[] content = new object[] { voiceId, evNumber, data };
-            
+
             var opt = new LoadBalancing.RaiseEventOptions();
             opt.SequenceChannel = (byte) channelId;
             if (localVoice.DebugEchoMode)
@@ -236,7 +236,7 @@ namespace ExitGames.Client.Photon.Voice
             opt.InterestGroup = localVoice.Group;
             lock (sendLock)
             {
-                this.OpRaiseEvent((byte)VoiceEventCode.GetCode(channelId), content, true, opt);
+                this.OpRaiseEvent((byte)VoiceEventCode.GetCode(channelId), content, localVoice.Reliable, opt);
             }
             this.loadBalancingPeer.SendOutgoingCommands();
         }
@@ -249,7 +249,7 @@ namespace ExitGames.Client.Photon.Voice
             // check for voice event first
             if (VoiceEventCode.TryGetChannelID(ev.Code, this.loadBalancingPeer.ChannelCount, out channel))
             {
-                // Payloads are arrays. If first array element is 0 than next is event subcode. Otherwise, the event is data frame with voiceId in 1st element.                    
+                // Payloads are arrays. If first array element is 0 than next is event subcode. Otherwise, the event is data frame with voiceId in 1st element.
                 this.voiceClient.onVoiceEvent(ev[(byte)LoadBalancing.ParameterCode.CustomEventContent], channel, (int)ev[LoadBalancing.ParameterCode.ActorNr], this.LocalPlayer.ID);
             }
             else
@@ -308,7 +308,7 @@ namespace ExitGames.Client.Photon.Voice
             if (this.voiceClient.removePlayerVoices(playerId))
             {
                 this.DebugReturn(DebugLevel.INFO, "[PV] Player " + playerId + " voices removed on leave");
-            }            
+            }
             else
             {
                 this.DebugReturn(DebugLevel.WARNING, "[PV] Voices of player " + playerId + " not found when trying to remove on player leave");
