@@ -1,27 +1,23 @@
 fileFormatVersion: 2
-guid: fc84137f1dd867341b226d31d757c5ff
-timeCreated: 1517467953
+guid: 0860510f861ac2e48a317f87cc83af86
+timeCreated: 1524433811
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
+    2100000: trashA_low
     2300000: //RootNode
     3300000: //RootNode
     4300000: trashA_high003
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: trashA_low
-    second: {fileID: 2100000, guid: cf813148a3504314c88f68acfe42d338, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -59,6 +55,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
