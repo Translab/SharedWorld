@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: e2464927f7389e04fa7eac8f61942943
-timeCreated: 1524433817
+guid: 4300a893606110e478fdc161524bb5fd
+timeCreated: 1516080607
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -15,10 +15,6 @@ ModelImporter:
     400004: trashC_low
     400006: trashD_low
     400008: //RootNode
-    2100000: trashA_low
-    2100002: trashB_low
-    2100004: trashC_low
-    2100006: trashD_low
     2300000: trashA_low
     2300002: trashB_low
     2300004: trashC_low
@@ -32,12 +28,32 @@ ModelImporter:
     4300004: trashC_low
     4300006: trashD_low
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trashA_low
+    second: {fileID: 2100000, guid: 048427b095f05a34dad6d3531793c552, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trashB_low
+    second: {fileID: 2100000, guid: b84db8c991f6c844898b3112507916aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trashC_low
+    second: {fileID: 2100000, guid: 0c86cc1a1a2c4a341a253b026ebcc60f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trashD_low
+    second: {fileID: 2100000, guid: 9ecfb27bd7dde7844bda7967a750e697, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -75,8 +91,6 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
