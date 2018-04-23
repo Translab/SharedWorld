@@ -29,16 +29,27 @@ public class Scatter : MonoBehaviour {
 	public bool skip_first_target = true;
 	public float morph_stay_time = 0.5f;
 	public bool simulate = true;
+	public bool moving = true;
+	public float geo_scale = 2.0f;
+	public float comp_scale = 6.0f;
 
 	void Start () {
 		seed = Random.Range (0, 100); // can take fixed seed
 
+		//scale components
+		for (int i = 0; i < components.Length; i++){
+			components [i].transform.localScale *= comp_scale;
+		}
+
 		//check targets number and store their vertices lists into a list, also transform local vertices into world positions
 		for (int i = 0; i < geo_targets.Length; i++) {
+			//scale
+			//geo_targets [i].transform.localScale *= scaleFactor;
+
 			world_targets.Add(new List<Vector3> ());
-			Matrix4x4 m = geo_targets[i].transform.localToWorldMatrix;
+			//Matrix4x4 m = geo_targets[i].transform.localToWorldMatrix;
 			//can be done similiarly like this, with more specific transformation parameters of rotation and scale
-			//Matrix4x4 m = Matrix4x4.TRS (geo_targets [i].transform.position, geo_targets [i].transform.rotation, geo_targets [i].transform.localScale);
+			Matrix4x4 m = Matrix4x4.TRS (geo_targets [i].transform.position, geo_targets [i].transform.rotation, geo_targets [i].transform.localScale * geo_scale);
 			matrices.Add(m);
 			for (int j = 0; j < geo_targets [i].GetComponent<MeshFilter>().sharedMesh.vertices.Length; j++) {
 				world_targets[i].Add(matrices[i].MultiplyPoint3x4 (geo_targets[i].GetComponent<MeshFilter>().sharedMesh.vertices[j]));
@@ -81,11 +92,38 @@ public class Scatter : MonoBehaviour {
 		} else if (lerp_value >= 1 + morph_stay_time && morph_step != geo_targets.Length - 1) {
 			lerp_value = 0;
 			morph_step += 1;
+			if (moving){
+				if (morph_step + 1 != geo_targets.Length) {
+					Matrix4x4 m = Matrix4x4.TRS (geo_targets [morph_step + 1].transform.position, geo_targets [morph_step + 1].transform.rotation, geo_targets [morph_step + 1].transform.localScale * geo_scale);
+					for (int i = 0; i < copies.Count; i++) {
+						world_targets [morph_step + 1] [i * skip_step [morph_step + 1]] = m.MultiplyPoint3x4 (geo_targets [morph_step + 1].GetComponent<MeshFilter> ().sharedMesh.vertices [i * skip_step [morph_step + 1]]);
+					}
+				} else {
+					if (!skip_first_target) {
+						Matrix4x4 m = Matrix4x4.TRS (geo_targets [0].transform.position, geo_targets [0].transform.rotation, geo_targets [0].transform.localScale * geo_scale);
+						for (int i = 0; i < copies.Count; i++) {
+							world_targets [0] [i * skip_step [0]] = m.MultiplyPoint3x4 (geo_targets [0].GetComponent<MeshFilter> ().sharedMesh.vertices [i * skip_step [0]]);
+						}
+					} else {
+						Matrix4x4 m = Matrix4x4.TRS (geo_targets [1].transform.position, geo_targets [1].transform.rotation, geo_targets [1].transform.localScale * geo_scale);
+						for (int i = 0; i < copies.Count; i++) {
+							world_targets [1] [i * skip_step [1]] = m.MultiplyPoint3x4 (geo_targets [1].GetComponent<MeshFilter> ().sharedMesh.vertices [i * skip_step [1]]);
+						}
+					}
+				}
+			}
 		} else if (lerp_value >= 1 + morph_stay_time && morph_step == geo_targets.Length - 1) {
 			if (skip_first_target) {
 				morph_step = 1;
+
 			} else {
 				morph_step = 0;
+			}
+			if (moving){
+				Matrix4x4 m = Matrix4x4.TRS (geo_targets [morph_step + 1].transform.position, geo_targets [morph_step + 1].transform.rotation, geo_targets [morph_step + 1].transform.localScale * geo_scale);
+				for (int i = 0; i < copies.Count; i++) {
+					world_targets [morph_step + 1] [i * skip_step [morph_step + 1]] = m.MultiplyPoint3x4 (geo_targets [morph_step + 1].GetComponent<MeshFilter> ().sharedMesh.vertices [i * skip_step [morph_step + 1]]);
+				}
 			}
 			lerp_value = 0;
 		}
@@ -104,6 +142,8 @@ public class Scatter : MonoBehaviour {
 				copies [i].transform.position = Vector3.Lerp (world_targets [morph_step] [i * skip_step [morph_step]], world_targets [morph_step + 1] [i * skip_step [morph_step + 1]], lerp_value);
 			}
 		}
+
 	}
+
 		
 }
