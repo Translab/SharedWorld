@@ -36,10 +36,10 @@ public class Scatter : MonoBehaviour {
 	void Start () {
 		seed = Random.Range (0, 100); // can take fixed seed
 
-		//scale components
-		for (int i = 0; i < components.Length; i++){
-			components [i].transform.localScale *= comp_scale;
-		}
+//		//scale components
+//		for (int i = 0; i < components.Length; i++){
+//			components [i].transform.localScale *= comp_scale;
+//		}
 
 		//check targets number and store their vertices lists into a list, also transform local vertices into world positions
 		for (int i = 0; i < geo_targets.Length; i++) {
@@ -63,6 +63,7 @@ public class Scatter : MonoBehaviour {
 			for (int j = 0; j < components.Length; j++) {
 				if (dice == j) {
 					clones = Instantiate (components [j], world_targets[0][i], rotation);
+					clones.transform.localScale *= comp_scale;
 				}
 			}
 			copies.Add (clones);
@@ -144,6 +145,7 @@ public class Scatter : MonoBehaviour {
 		}
 
 	}
+
 
 		
 }
