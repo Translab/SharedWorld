@@ -10,6 +10,7 @@ ModelImporter:
     400000: default
     400002: //RootNode
     2100000: material_0
+    2100002: defaultMat
     2300000: default
     3300000: default
     4300000: default
@@ -47,11 +48,11 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
-    importBlendShapes: 1
+    importBlendShapes: 0
     importCameras: 1
-    importLights: 1
-    swapUVChannels: 0
-    generateSecondaryUV: 0
+    importLights: 0
+    swapUVChannels: 1
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
