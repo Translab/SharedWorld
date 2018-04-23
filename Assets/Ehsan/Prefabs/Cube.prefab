@@ -126,3 +126,5 @@ MonoBehaviour:
   obj: {fileID: 1851041463780960}
   father: {fileID: 0}
   maxAge: 5
+  maXspeed: 10
+  mat: {fileID: 2100000, guid: e1c534152ced5924f904b56bf904c1e9, type: 2}

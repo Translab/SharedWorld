@@ -13,16 +13,26 @@ public class SelfReplication : MonoBehaviour {
     public float maxAge = 5f;
     private float timer = 0f;
 
+    public float maXspeed = 10f;
+    public Material mat;
+    private Material mymat;
     private bool untouched = true;
     // Use this for initialization
     IEnumerator Start()
     {
+        GetComponent<Renderer>().material = new Material(mat);
+        mymat = GetComponent<Renderer>().material;
+
         yield return new WaitForSeconds(Random.Range(0.1f, 0.2f));
         givenbirth1st = false;
+
+
     }
 	
 	// Update is called once per frame
 	void Update () {
+
+        Vector3 velocity = GetComponent<Rigidbody>().velocity;
 
         timer += Time.deltaTime;
         if (timer > maxAge)
@@ -32,7 +42,7 @@ public class SelfReplication : MonoBehaviour {
 
         if (!givenbirth1st)
         {
-            if (GetComponent<Rigidbody>().velocity.magnitude < 0.8f * transform.localScale.x)
+            if (velocity.magnitude < 0.8f * transform.localScale.x)
             {
                 
                 GiveBirth();
@@ -45,21 +55,24 @@ public class SelfReplication : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        if (GetComponent<Rigidbody>().velocity.magnitude > 2.0f * transform.localScale.x)
+        if (velocity.magnitude > 2.0f * transform.localScale.x)
         {
             highSpeed = true;
         }
 
-        if (highSpeed && GetComponent<Rigidbody>().velocity.magnitude < 0.001f * transform.localScale.x)
+        if (highSpeed && velocity.magnitude < 0.001f * transform.localScale.x)
         {
             highSpeed = false;
             StartCoroutine(Start());
         }
 
-        if (GetComponent<Rigidbody>().velocity.magnitude > 5f)
+        if (velocity.magnitude > 5f)
         {
             //Destroy(gameObject);
         }
+
+        mymat.SetFloat("_Level", velocity.magnitude / maXspeed);
+
 
     }
 
@@ -87,6 +100,11 @@ public class SelfReplication : MonoBehaviour {
         {
             untouched = false;
         }
+    }
+
+    void OnDestroy()
+    {
+        Destroy(mymat);
     }
 
 }
