@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 397ecdaec6da94dac9ace0153d819d13
-timeCreated: 1516295100
+guid: 419d135ab6d79e045a58ac6722c5b5d2
+timeCreated: 1524510363
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,20 +9,16 @@ ModelImporter:
     100002: //RootNode
     400000: Layer_10
     400002: //RootNode
+    2100000: Layer_10Mat
     2300000: Layer_10
     3300000: Layer_10
     4300000: Layer_10
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Silver
-    second: {fileID: 2100000, guid: 837781a250da0441bb8ccf751d5c676f, type: 2}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -60,6 +56,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

@@ -1,230 +1,24 @@
 fileFormatVersion: 2
-guid: 39c03056bf1da4885b5d4a054464d7ed
-timeCreated: 1521730730
+guid: 8166c105ef477b649b04c30c8640baf6
+timeCreated: 1524510897
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: Default
-    100004: Default_MeshPart0
-    100006: Default_MeshPart1
-    100008: Default_MeshPart10
-    100010: Default_MeshPart11
-    100012: Default_MeshPart12
-    100014: Default_MeshPart13
-    100016: Default_MeshPart14
-    100018: Default_MeshPart15
-    100020: Default_MeshPart16
-    100022: Default_MeshPart17
-    100024: Default_MeshPart18
-    100026: Default_MeshPart19
-    100028: Default_MeshPart2
-    100030: Default_MeshPart20
-    100032: Default_MeshPart21
-    100034: Default_MeshPart22
-    100036: Default_MeshPart23
-    100038: Default_MeshPart24
-    100040: Default_MeshPart25
-    100042: Default_MeshPart26
-    100044: Default_MeshPart27
-    100046: Default_MeshPart28
-    100048: Default_MeshPart29
-    100050: Default_MeshPart3
-    100052: Default_MeshPart30
-    100054: Default_MeshPart31
-    100056: Default_MeshPart32
-    100058: Default_MeshPart33
-    100060: Default_MeshPart34
-    100062: Default_MeshPart35
-    100064: Default_MeshPart36
-    100066: Default_MeshPart37
-    100068: Default_MeshPart38
-    100070: Default_MeshPart39
-    100072: Default_MeshPart4
-    100074: Default_MeshPart40
-    100076: Default_MeshPart5
-    100078: Default_MeshPart6
-    100080: Default_MeshPart7
-    100082: Default_MeshPart8
-    100084: Default_MeshPart9
     400000: //RootNode
     400002: Default
-    400004: Default_MeshPart0
-    400006: Default_MeshPart1
-    400008: Default_MeshPart10
-    400010: Default_MeshPart11
-    400012: Default_MeshPart12
-    400014: Default_MeshPart13
-    400016: Default_MeshPart14
-    400018: Default_MeshPart15
-    400020: Default_MeshPart16
-    400022: Default_MeshPart17
-    400024: Default_MeshPart18
-    400026: Default_MeshPart19
-    400028: Default_MeshPart2
-    400030: Default_MeshPart20
-    400032: Default_MeshPart21
-    400034: Default_MeshPart22
-    400036: Default_MeshPart23
-    400038: Default_MeshPart24
-    400040: Default_MeshPart25
-    400042: Default_MeshPart26
-    400044: Default_MeshPart27
-    400046: Default_MeshPart28
-    400048: Default_MeshPart29
-    400050: Default_MeshPart3
-    400052: Default_MeshPart30
-    400054: Default_MeshPart31
-    400056: Default_MeshPart32
-    400058: Default_MeshPart33
-    400060: Default_MeshPart34
-    400062: Default_MeshPart35
-    400064: Default_MeshPart36
-    400066: Default_MeshPart37
-    400068: Default_MeshPart38
-    400070: Default_MeshPart39
-    400072: Default_MeshPart4
-    400074: Default_MeshPart40
-    400076: Default_MeshPart5
-    400078: Default_MeshPart6
-    400080: Default_MeshPart7
-    400082: Default_MeshPart8
-    400084: Default_MeshPart9
-    2300000: Default_MeshPart0
-    2300002: Default_MeshPart1
-    2300004: Default_MeshPart10
-    2300006: Default_MeshPart11
-    2300008: Default_MeshPart12
-    2300010: Default_MeshPart13
-    2300012: Default_MeshPart14
-    2300014: Default_MeshPart15
-    2300016: Default_MeshPart16
-    2300018: Default_MeshPart17
-    2300020: Default_MeshPart18
-    2300022: Default_MeshPart19
-    2300024: Default_MeshPart2
-    2300026: Default_MeshPart20
-    2300028: Default_MeshPart21
-    2300030: Default_MeshPart22
-    2300032: Default_MeshPart23
-    2300034: Default_MeshPart24
-    2300036: Default_MeshPart25
-    2300038: Default_MeshPart26
-    2300040: Default_MeshPart27
-    2300042: Default_MeshPart28
-    2300044: Default_MeshPart29
-    2300046: Default_MeshPart3
-    2300048: Default_MeshPart30
-    2300050: Default_MeshPart31
-    2300052: Default_MeshPart32
-    2300054: Default_MeshPart33
-    2300056: Default_MeshPart34
-    2300058: Default_MeshPart35
-    2300060: Default_MeshPart36
-    2300062: Default_MeshPart37
-    2300064: Default_MeshPart38
-    2300066: Default_MeshPart39
-    2300068: Default_MeshPart4
-    2300070: Default_MeshPart40
-    2300072: Default_MeshPart5
-    2300074: Default_MeshPart6
-    2300076: Default_MeshPart7
-    2300078: Default_MeshPart8
-    2300080: Default_MeshPart9
-    3300000: Default_MeshPart0
-    3300002: Default_MeshPart1
-    3300004: Default_MeshPart10
-    3300006: Default_MeshPart11
-    3300008: Default_MeshPart12
-    3300010: Default_MeshPart13
-    3300012: Default_MeshPart14
-    3300014: Default_MeshPart15
-    3300016: Default_MeshPart16
-    3300018: Default_MeshPart17
-    3300020: Default_MeshPart18
-    3300022: Default_MeshPart19
-    3300024: Default_MeshPart2
-    3300026: Default_MeshPart20
-    3300028: Default_MeshPart21
-    3300030: Default_MeshPart22
-    3300032: Default_MeshPart23
-    3300034: Default_MeshPart24
-    3300036: Default_MeshPart25
-    3300038: Default_MeshPart26
-    3300040: Default_MeshPart27
-    3300042: Default_MeshPart28
-    3300044: Default_MeshPart29
-    3300046: Default_MeshPart3
-    3300048: Default_MeshPart30
-    3300050: Default_MeshPart31
-    3300052: Default_MeshPart32
-    3300054: Default_MeshPart33
-    3300056: Default_MeshPart34
-    3300058: Default_MeshPart35
-    3300060: Default_MeshPart36
-    3300062: Default_MeshPart37
-    3300064: Default_MeshPart38
-    3300066: Default_MeshPart39
-    3300068: Default_MeshPart4
-    3300070: Default_MeshPart40
-    3300072: Default_MeshPart5
-    3300074: Default_MeshPart6
-    3300076: Default_MeshPart7
-    3300078: Default_MeshPart8
-    3300080: Default_MeshPart9
-    4300000: Default_MeshPart0
-    4300002: Default_MeshPart1
-    4300004: Default_MeshPart2
-    4300006: Default_MeshPart3
-    4300008: Default_MeshPart4
-    4300010: Default_MeshPart5
-    4300012: Default_MeshPart6
-    4300014: Default_MeshPart7
-    4300016: Default_MeshPart8
-    4300018: Default_MeshPart9
-    4300020: Default_MeshPart10
-    4300022: Default_MeshPart11
-    4300024: Default_MeshPart12
-    4300026: Default_MeshPart13
-    4300028: Default_MeshPart14
-    4300030: Default_MeshPart15
-    4300032: Default_MeshPart16
-    4300034: Default_MeshPart17
-    4300036: Default_MeshPart18
-    4300038: Default_MeshPart19
-    4300040: Default_MeshPart20
-    4300042: Default_MeshPart21
-    4300044: Default_MeshPart22
-    4300046: Default_MeshPart23
-    4300048: Default_MeshPart24
-    4300050: Default_MeshPart25
-    4300052: Default_MeshPart26
-    4300054: Default_MeshPart27
-    4300056: Default_MeshPart28
-    4300058: Default_MeshPart29
-    4300060: Default_MeshPart30
-    4300062: Default_MeshPart31
-    4300064: Default_MeshPart32
-    4300066: Default_MeshPart33
-    4300068: Default_MeshPart34
-    4300070: Default_MeshPart35
-    4300072: Default_MeshPart36
-    4300074: Default_MeshPart37
-    4300076: Default_MeshPart38
-    4300078: Default_MeshPart39
-    4300080: Default_MeshPart40
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Silver
-    second: {fileID: 2100000, guid: 837781a250da0441bb8ccf751d5c676f, type: 2}
+    2100000: DefaultMat
+    2300000: Default
+    3300000: Default
+    4300000: Default
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -262,6 +56,8 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
