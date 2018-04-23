@@ -1,18 +1,19 @@
 fileFormatVersion: 2
-guid: 919431e56c31a4b4980893e73e378407
-timeCreated: 1524469899
+guid: 357af661980464d0fa952fbcc920059f
+timeCreated: 1520560829
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Layer_07
+    100002: polySurface6
     400000: //RootNode
-    400002: Layer_07
-    2100000: Layer_07Mat
-    2300000: Layer_07
-    3300000: Layer_07
-    4300000: Layer_07
+    400002: polySurface6
+    2100000: lambert1
+    2300000: polySurface6
+    3300000: polySurface6
+    4300000: polySurface6
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -87,7 +88,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
