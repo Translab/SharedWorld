@@ -8134,7 +8134,7 @@ Prefab:
     - target: {fileID: 114266769956035390, guid: 13512ee622e076740b6416d8c8fcc7fa,
         type: 2}
       propertyPath: comp_scale
-      value: 180
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 4577442348677270, guid: 13512ee622e076740b6416d8c8fcc7fa, type: 2}
       propertyPath: m_LocalPosition.y
@@ -8234,7 +8234,7 @@ Prefab:
     - target: {fileID: 114266769956035390, guid: 13512ee622e076740b6416d8c8fcc7fa,
         type: 2}
       propertyPath: geo_scale
-      value: 12.5
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 4915006877563294, guid: 13512ee622e076740b6416d8c8fcc7fa, type: 2}
       propertyPath: m_LocalPosition.y
