@@ -32,14 +32,14 @@ public class Scatter : MonoBehaviour {
 	public bool moving = true;
 	public float geo_scale = 2.0f;
 	public float comp_scale = 6.0f;
+	private GameObject placeholder;
 
 	void Start () {
 		seed = Random.Range (0, 100); // can take fixed seed
 
-//		//scale components
-//		for (int i = 0; i < components.Length; i++){
-//			components [i].transform.localScale *= comp_scale;
-//		}
+//		//create placeholder / parent
+		placeholder = new GameObject();
+		placeholder.name = "Morphing Components";
 
 		//check targets number and store their vertices lists into a list, also transform local vertices into world positions
 		for (int i = 0; i < geo_targets.Length; i++) {
@@ -64,6 +64,7 @@ public class Scatter : MonoBehaviour {
 				if (dice == j) {
 					clones = Instantiate (components [j], world_targets[0][i], rotation);
 					clones.transform.localScale *= comp_scale;
+					clones.transform.SetParent (placeholder.transform);
 				}
 			}
 			copies.Add (clones);
