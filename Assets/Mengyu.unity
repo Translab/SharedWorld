@@ -299,7 +299,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1183640167
+  randomSeed: -139102804
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4331,6 +4331,99 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1152841332744498, guid: f72137069d19d3e40af8daad473d195b, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198283259041604274, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: InitialModule.maxNumParticles
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 198283259041604274, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: lengthInSec
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 198283259041604274, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: randomSeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198283259041604274, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: ShapeModule.radius.value
+      value: 125.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: randomSeed
+      value: 1066511384
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: ShapeModule.radius.value
+      value: 383.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: ShapeModule.radiusThickness
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: ShapeModule.type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: ShapeModule.m_Rotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: ShapeModule.m_Rotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198045146498545110, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: ShapeModule.m_Rotation.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867840810997890, guid: f72137069d19d3e40af8daad473d195b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 111.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 199373440147367056, guid: f72137069d19d3e40af8daad473d195b,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b9ff41e40ef08194494509ffbe8a4d8b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f72137069d19d3e40af8daad473d195b, type: 2}
   m_IsPrefabParent: 0
@@ -4468,7 +4561,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -217345053
+  randomSeed: 1880964145
   InitialModule:
     serializedVersion: 3
     enabled: 1
