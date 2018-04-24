@@ -4727,7 +4727,7 @@ MonoBehaviour:
   isThisLeftHand: 1
   SteamVRCameraRig: {fileID: 1101788886}
   SimulatorCameraRig: {fileID: 902678579}
-  fly_speed: 1
+  fly_speed: 9
   playarea: {fileID: 72477889}
   collision_detection: 0
   gravity: 0
@@ -6396,7 +6396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectControlScript: {fileID: 772472692}
   listenOnAxisChange: 0
-  maximumSpeed: 3
+  maximumSpeed: 6
   deceleration: 0.1
   fallingDeceleration: 0.01
   speedMultiplier: 1.5
