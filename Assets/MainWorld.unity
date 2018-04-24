@@ -3994,7 +3994,6 @@ GameObject:
   m_Component:
   - component: {fileID: 902678580}
   - component: {fileID: 902678581}
-  - component: {fileID: 902678582}
   m_Layer: 0
   m_Name: VRSimulatorCameraRig
   m_TagString: Untagged
@@ -4064,20 +4063,6 @@ MonoBehaviour:
   startMenuAlias: 102
   touchModifier: 116
   hairTouchModifier: 104
---- !u!114 &902678582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 902678579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29e32dbb4ed3f7e41a311413e3034552, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  head: {fileID: 1320570811}
-  leftHand: {fileID: 1931424227}
-  rightHand: {fileID: 1913032515}
 --- !u!1 &905995310
 GameObject:
   m_ObjectHideFlags: 0
@@ -4738,7 +4723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74d43baf82a647439803ded92fbdff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useSimulator: 1
+  useSimulator: 0
   isThisLeftHand: 1
   SteamVRCameraRig: {fileID: 1101788886}
   SimulatorCameraRig: {fileID: 902678579}
@@ -9746,7 +9731,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AutoConnect: 1
   Version: 1
-  avatarIndex: 4
+  avatarIndex: 2
   headPrefabs:
   - {fileID: 1148140044345860, guid: f0606210d5eb5ce48a300fb5096ea6fc, type: 2}
   - {fileID: 1122135002497326, guid: d0ee633dce1d68841806b3db2b2d0a16, type: 2}
