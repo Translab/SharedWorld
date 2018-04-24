@@ -9738,9 +9738,9 @@ MonoBehaviour:
   - {fileID: 1730495455761492, guid: d8aec9b48f07ef245ad06294aac38aac, type: 2}
   - {fileID: 1268156357806942, guid: 28bca8d0d1d107b4c8f92d33c48a0571, type: 2}
   - {fileID: 1981324507331154, guid: 21232a400a5b9064ebeb653e1816a46b, type: 2}
-  leftHandPrefab: {fileID: 1542090531481098, guid: 49c5c43992c3d504e94e329a080448cc,
+  leftHandPrefab: {fileID: 1098448153155368, guid: 09e8910985ea37c47b2f669d93fcebb2,
     type: 2}
-  rightHandPrefab: {fileID: 1082169850474854, guid: e908525b1b6b52846bb6b9c8b150de41,
+  rightHandPrefab: {fileID: 1566759766482042, guid: 1bb8e04ec40c8ff449b62be00b3d42c1,
     type: 2}
 --- !u!4 &2037220092
 Transform:
