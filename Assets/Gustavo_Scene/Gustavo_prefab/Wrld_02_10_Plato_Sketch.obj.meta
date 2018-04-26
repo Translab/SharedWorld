@@ -1,53 +1,23 @@
 fileFormatVersion: 2
-guid: b543dde13e8a34116ba13b79942b8498
-timeCreated: 1521730841
+guid: 397ecdaec6da94dac9ace0153d819d13
+timeCreated: 1516295100
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Default
-    100004: Default_MeshPart0
-    100006: Default_MeshPart1
-    100008: Default_MeshPart2
-    100010: Default_MeshPart3
-    100012: Default_MeshPart4
-    100014: Default_MeshPart5
-    400000: //RootNode
-    400002: Default
-    400004: Default_MeshPart0
-    400006: Default_MeshPart1
-    400008: Default_MeshPart2
-    400010: Default_MeshPart3
-    400012: Default_MeshPart4
-    400014: Default_MeshPart5
-    2300000: Default_MeshPart0
-    2300002: Default_MeshPart1
-    2300004: Default_MeshPart2
-    2300006: Default_MeshPart3
-    2300008: Default_MeshPart4
-    2300010: Default_MeshPart5
-    2300012: Default
-    3300000: Default_MeshPart0
-    3300002: Default_MeshPart1
-    3300004: Default_MeshPart2
-    3300006: Default_MeshPart3
-    3300008: Default_MeshPart4
-    3300010: Default_MeshPart5
-    3300012: Default
-    4300000: Default_MeshPart0
-    4300002: Default_MeshPart1
-    4300004: Default_MeshPart2
-    4300006: Default_MeshPart3
-    4300008: Default_MeshPart4
-    4300010: Default_MeshPart5
-    4300012: Default
+    100000: Layer_10
+    100002: //RootNode
+    400000: Layer_10
+    400002: //RootNode
+    2300000: Layer_10
+    3300000: Layer_10
+    4300000: Layer_10
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: DefaultMat
-    second: {fileID: 2100000, guid: d1bfd0ca05afd4047852a5531bfaefc0, type: 2}
+      name: Silver
+    second: {fileID: 2100000, guid: 837781a250da0441bb8ccf751d5c676f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -90,8 +60,6 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
