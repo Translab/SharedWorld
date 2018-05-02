@@ -14,8 +14,8 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  m_Fog: 1
-  m_FogColor: {r: 0.9781618, g: 1, b: 0.8014706, a: 0.019607844}
+  m_Fog: 0
+  m_FogColor: {r: 1, g: 1, b: 1, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.003
   m_LinearFogStart: 0
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6d442b8a2abe85047a92c51a779d2885, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 18646102}
   - component: {fileID: 18646101}
   - component: {fileID: 18646100}
+  - component: {fileID: 18646103}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -209,6 +210,22 @@ Behaviour:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 18646097}
   m_Enabled: 1
+--- !u!114 &18646103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18646097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4ab9821096c489f84e50f35b7b9644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startDistance: 1
+  _useRadialDistance: 0
+  _fadeToSkybox: 1
+  _fogdensity: 1
+  _shader: {fileID: 4800000, guid: 3514cc2676a6c4db294c28459f22c359, type: 3}
 --- !u!1 &28005226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,7 +1883,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.9781618, g: 1, b: 0.8014706, a: 0.019607844}
+  m_Color: {r: 0.6102941, g: 0.6102941, b: 0.6102941, a: 0.019607844}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -4598,6 +4615,7 @@ GameObject:
   - component: {fileID: 1021763701}
   - component: {fileID: 1021763704}
   - component: {fileID: 1021763703}
+  - component: {fileID: 1021763705}
   - component: {fileID: 1021763702}
   m_Layer: 0
   m_Name: Camera (eye)
@@ -4623,8 +4641,7 @@ Transform:
 --- !u!114 &1021763702
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114000012849300506, guid: 41c0760bd81dd084283814f0c432b466,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1021763700}
   m_Enabled: 1
@@ -4653,7 +4670,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.9781618, g: 1, b: 0.8014706, a: 0.019607844}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -4680,6 +4697,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1021763705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1021763700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4ab9821096c489f84e50f35b7b9644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _startDistance: 1
+  _useRadialDistance: 0
+  _fadeToSkybox: 0
+  _fogdensity: 1
+  _shader: {fileID: 4800000, guid: 3514cc2676a6c4db294c28459f22c359, type: 3}
 --- !u!1 &1023100995
 GameObject:
   m_ObjectHideFlags: 0

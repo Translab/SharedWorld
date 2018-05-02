@@ -10,6 +10,24 @@ public class RandomTextPick : MonoBehaviour {
 	private Color colorA;
 	private Color colorB;
 
+	private MeshRenderer meshRender;
+
+	void Awake(){
+		meshRender = GetComponent<MeshRenderer> ();
+		meshRender.materials[0].renderQueue = -1;
+		meshRender.materials [0].DisableKeyword ("_ALPHATEST_ON");
+		//meshRender.materials[0].SetOverrideTag("RenderType", "Opaque");
+		meshRender.materials [0].SetOverrideTag ("IgnoreProjector", "True");
+		meshRender.materials [0].SetOverrideTag ("PreviewType", "Plane");
+		int z = meshRender.materials [0].FindPass ("zwrite");
+		meshRender.materials [0].SetShaderPassEnabled ("Lighting", false);
+		meshRender.materials [0].SetShaderPassEnabled ("Cull", false);
+		meshRender.materials [0].SetShaderPassEnabled ("ZTest", false);
+		meshRender.materials [0].SetShaderPassEnabled ("LEqual", false);
+		meshRender.materials [0].SetShaderPassEnabled ("ZWrite", false);
+
+		//Lighting Off Cull Off ZTest LEqual ZWrite
+	}
 	// Use this for initialization
 	void Start () {
 		textMesh = GetComponent<TextMesh> ();
@@ -19,6 +37,7 @@ public class RandomTextPick : MonoBehaviour {
 		textMesh.fontSize = Random.Range (60, 120);
 		colorA = Random.ColorHSV (0.0f, 1.0f,0.0f,1.0f);
 		colorB = Random.ColorHSV (0.0f, 1.0f,0.0f,1.0f);
+
 	}
 	
 	// Update is called once per frame
