@@ -18,14 +18,14 @@ public class worm_blend : MonoBehaviour
 //	public GameObject CameraRig;
 	SkinnedMeshRenderer skinRenderer;
 	public float maxDistance=100.0f;
-	public bool UseSimulator = true;
+//	public bool UseSimulator = true;
 
 	void Awake ()
 	{
 		skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer> ();
 		skinnedMesh = GetComponent<SkinnedMeshRenderer> ().sharedMesh;
 		skinRenderer = GetComponent<SkinnedMeshRenderer> ();
-		UseSimulator = true;
+		//UseSimulator = true;
 
 //		skinnedMeshRenderer.skinnedMotionVectors = false;
 //		skinnedMeshRenderer.updateWhenOffscreen = false;
@@ -57,13 +57,13 @@ public class worm_blend : MonoBehaviour
 
 	void Update ()
 	{	
-		//distance = Vector3.Distance (this.transform.position, CameraRig.transform.position);
-		//if (distance < maxDistance && skinRenderer.isVisible) {
+//		distance = Vector3.Distance (this.transform.position, CameraRig.transform.position);
+//		if (distance < maxDistance && skinRenderer.isVisible) {
 			blendOne += blendSpeed;
 			skinnedMeshRenderer.SetBlendShapeWeight (0, blendOne);
 			if (blendOne > 100f || blendOne < 0.0f) {
 				blendSpeed = -blendSpeed;
 			}
-		//}
+//		}
 	}
 }
