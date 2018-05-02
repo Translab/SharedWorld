@@ -90,7 +90,6 @@ namespace Kino
         [ImageEffectOpaque]
         void OnRenderImage(RenderTexture source, RenderTexture destination)
         {
-			Debug.Log (_fogdensity);
             if (_material == null)
             {
                 _material = new Material(_shader);
