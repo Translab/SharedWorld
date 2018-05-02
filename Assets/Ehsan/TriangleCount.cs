@@ -27,7 +27,14 @@ public class TriangleCount : MonoBehaviour {
                 }  
             }
 
-            int budget = overallLimit / SceneManager.sceneCount;
+            int budget = overallLimit;
+            if (SceneManager.sceneCount > 1)
+            {
+                budget = overallLimit / SceneManager.sceneCount - 1;
+            }
+
+
+            if(i>0) // don't log for the main scene
             if (triscount[i] <= budget)
             {
                 Debug.Log(scenes[i].name + " is using " + triscount[i] + " triangles out of " + budget);
