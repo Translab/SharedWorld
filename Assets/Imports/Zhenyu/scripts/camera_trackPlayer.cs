@@ -6,12 +6,14 @@ public class camera_trackPlayer : MonoBehaviour {
 	GameObject playerHead;
 	float pitch;
 	float yaw;
-
+	float yaw_real;
+	//PID pid_yaw;
 	// Use this for initialization
 	void Start () {
 		playerHead = GameObject.Find("MainCamera");
 		pitch = 0f;
 		yaw = 0f;
+		//pid_yaw = new PID (1f, 0.9f, 0);
 	}
 	
 	// Update is called once per frame
@@ -27,23 +29,23 @@ public class camera_trackPlayer : MonoBehaviour {
 		//pitch = Mathf.Atan (Mathf.Sqrt (rd.x * rd.x + rd.z * rd.z) / rd.y);
 		yaw = Mathf.Atan (rd.z / (rd.x));
 		float sign =  1;
-		print ("rd.z = " + rd.z+" rd.x = " + rd.x);
+		//print ("rd.z = " + rd.z+" rd.x = " + rd.x);
 		if (rd.z > 0) {
 			if (rd.x > 0) {
 				yaw = -(yaw/3.14f)* 180f;
 			} else {
 				yaw = ((Mathf.PI-yaw)/3.14f)* 180f;
 			}
-		} else {
+		} else { 
 			if (rd.x > 0) {
 				yaw = -(yaw/3.14f)* 180f;
 			} else {
 				yaw =((Mathf.PI-yaw)/3.14f)* 180f;
 			}
 		}
-
-		//yaw = (yaw/3.14f)* 180f;
-		print ("yaw = " + yaw+" sign = " + sign);
-		transform.rotation = Quaternion.Euler(transform.eulerAngles.x, yaw, transform.eulerAngles.z);
+		//pid_yaw.setReference (yaw);
+		//yaw_real = pid_yaw.process (yaw_real);
+		//print ("yaw = " + yaw+" sign = " + sign);
+		transform.rotation = Quaternion.Euler(transform.eulerAngles.x,yaw , transform.eulerAngles.z);
 	}
 }
