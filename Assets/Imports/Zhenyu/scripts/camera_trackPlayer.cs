@@ -18,17 +18,14 @@ public class camera_trackPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Vector3 camPosition = transform.position;
-		Vector3 playPosition = playerHead.transform.position;
-
-		Vector3 rd = playPosition - camPosition;  //relativeDistance
+		//Vector3 camPosition = transform.position;
+		//Vector3 playPosition = playerHead.transform.position;
+		Vector3 rd = playerHead.transform.position - transform.position;  //relativeDistance
 
 		float R = Mathf.Sqrt (rd.x * rd.x + rd.y * rd.y + rd.z * rd.z);
-
 		rd = rd/R;
 		//pitch = Mathf.Atan (Mathf.Sqrt (rd.x * rd.x + rd.z * rd.z) / rd.y);
 		yaw = Mathf.Atan (rd.z / (rd.x));
-		float sign =  1;
 		//print ("rd.z = " + rd.z+" rd.x = " + rd.x);
 		if (rd.z > 0) {
 			if (rd.x > 0) {
