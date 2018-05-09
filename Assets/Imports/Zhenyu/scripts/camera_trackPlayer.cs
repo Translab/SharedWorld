@@ -10,7 +10,8 @@ public class camera_trackPlayer : MonoBehaviour {
 	//PID pid_yaw;
 	// Use this for initialization
 	void Start () {
-		playerHead = GameObject.Find("MainCamera");
+		playerHead = GameObject.Find("PlayArea");
+		//playerHead = GameObject.Find("MainCamera");
 		//pitch = 0f;
 		yaw = 0f;
 		//pid_yaw = new PID (1f, 0.9f, 0);
