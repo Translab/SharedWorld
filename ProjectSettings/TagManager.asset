@@ -8,6 +8,7 @@ TagManager:
   - projectile
   - TeleportIgnore
   - generator
+  - self
   layers:
   - Default
   - TransparentFX

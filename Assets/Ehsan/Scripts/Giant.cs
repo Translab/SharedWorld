@@ -16,5 +16,14 @@ public class Giant : MonoBehaviour {
 	void Update () {
         myrigidbody.AddForce(new Vector3(0, (stableheight - transform.position.y)* forceamount, 0));
         myrigidbody.AddTorque(transform.right*10f);
+
+        //myrigidbody.AddForce()
 	}
+
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Vector3 dev;
+        dev = Vector3.Cross(transform.right, transform.up);
+    }
 }
