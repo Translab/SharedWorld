@@ -4682,6 +4682,7 @@ GameObject:
   - component: {fileID: 1021763704}
   - component: {fileID: 1021763703}
   - component: {fileID: 1021763705}
+  - component: {fileID: 1021763706}
   - component: {fileID: 1021763702}
   m_Layer: 0
   m_Name: Camera (eye)
@@ -4779,6 +4780,19 @@ MonoBehaviour:
   _useRadialDistance: 0
   _fadeToSkybox: 1
   _shader: {fileID: 4800000, guid: 3514cc2676a6c4db294c28459f22c359, type: 3}
+--- !u!114 &1021763706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1021763700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eed1d9cbe64423499f1fefc0ce50417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Resolution: 1
+  DefaultSpotCookie: {fileID: 2800000, guid: 5157bf6d690b6df458f6c0ce0c06d329, type: 3}
 --- !u!1 &1023100995
 GameObject:
   m_ObjectHideFlags: 0
