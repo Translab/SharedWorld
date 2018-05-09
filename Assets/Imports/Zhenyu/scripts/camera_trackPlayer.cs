@@ -27,6 +27,8 @@ public class camera_trackPlayer : MonoBehaviour {
 		//pitch = Mathf.Atan (Mathf.Sqrt (rd.x * rd.x + rd.z * rd.z) / rd.y);
 		yaw = Mathf.Atan (rd.z / (rd.x));
 		//print ("rd.z = " + rd.z+" rd.x = " + rd.x);
+
+		/*
 		if (rd.z > 0) {
 			if (rd.x > 0) {
 				yaw = -(yaw/3.14f)* 180f;
@@ -40,6 +42,15 @@ public class camera_trackPlayer : MonoBehaviour {
 				yaw =((Mathf.PI-yaw)/3.14f)* 180f;
 			}
 		}
+
+		*/
+
+		if (rd.x > 0) {
+			yaw = -(yaw/3.14f)* 180f;
+		} else {
+			yaw =((Mathf.PI-yaw)/3.14f)* 180f;
+		}
+
 		//pid_yaw.setReference (yaw);
 		//yaw_real = pid_yaw.process (yaw_real);
 		//print ("yaw = " + yaw+" sign = " + sign);
