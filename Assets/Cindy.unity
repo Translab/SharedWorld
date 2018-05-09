@@ -337,7 +337,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_LocalScale.x
@@ -399,7 +399,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_LocalScale.x
@@ -497,7 +497,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_LocalScale.x
@@ -660,7 +660,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_LocalScale.x
@@ -792,7 +792,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_LocalScale.x
@@ -850,7 +850,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0e16d0608d735f4c89ab15bde5e668e, type: 3}
       propertyPath: m_LocalScale.x
