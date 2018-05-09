@@ -35,10 +35,8 @@ class PID{
 			isOperational = false;
 		}
 
-
 		error_i+=error_p;
 		error_d = error_p - error_p_prev;
-
 		error_p_prev = error_p;
 
 		return (p*error_p)+(i*error_i)+(d*error_d);
