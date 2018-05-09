@@ -24,5 +24,7 @@ public class AdditiveSceneLoad : MonoBehaviour
 		EditorSceneManager.OpenScene("Assets/Weidi.unity", OpenSceneMode.Additive);	
 		EditorSceneManager.OpenScene("Assets/Zhenyu.unity", OpenSceneMode.Additive);
 		EditorSceneManager.OpenScene("Assets/Anshul.unity", OpenSceneMode.Additive);
+		EditorSceneManager.OpenScene("Assets/Alexis.unity", OpenSceneMode.Additive);
+		EditorSceneManager.OpenScene("Assets/Enrica.unity", OpenSceneMode.Additive);
 	}
 }
