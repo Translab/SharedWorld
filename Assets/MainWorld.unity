@@ -7211,7 +7211,7 @@ Prefab:
         type: 2}
       propertyPath: Effector
       value: 
-      objectReference: {fileID: 902678579}
+      objectReference: {fileID: 1101788886}
     - target: {fileID: 114135693538451892, guid: 89a54d19ea8c14f4d88f0caca0878e72,
         type: 2}
       propertyPath: TranslateX
@@ -7231,7 +7231,12 @@ Prefab:
         type: 2}
       propertyPath: Effector
       value: 
-      objectReference: {fileID: 902678579}
+      objectReference: {fileID: 1101788886}
+    - target: {fileID: 82641359815377982, guid: 89a54d19ea8c14f4d88f0caca0878e72,
+        type: 2}
+      propertyPath: MaxDistance
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 89a54d19ea8c14f4d88f0caca0878e72, type: 2}
   m_IsPrefabParent: 0
