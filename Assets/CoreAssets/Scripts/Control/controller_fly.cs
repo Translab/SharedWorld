@@ -106,7 +106,7 @@ namespace VRTK{
 
 
 		void Update(){
-			Debug.Log (trigger_pressure);
+			//Debug.Log (trigger_pressure);
 			facing_direction = Pointing_hand.transform.rotation * Vector3.forward;
 			reference_distance = Mathf.Abs(CameraRig.transform.position.y - landing_height);
 
@@ -210,7 +210,7 @@ namespace VRTK{
 
 		private void DoTriggerAxisChanged(object sender, ControllerInteractionEventArgs e)
 		{
-			trigger_pressure = e.buttonPressure;
+			trigger_pressure = Mathf.Pow(e.buttonPressure, 2);
 			if (trigger_pressure > 0){
 				flying = true;
 			} else if (trigger_pressure ==0 ){

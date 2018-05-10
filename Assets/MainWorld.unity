@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startDistance: 1
-  _fogdensity: 0.008
+  _fogdensity: 0.005
   _useRadialDistance: 0
   _fadeToSkybox: 1
   _shader: {fileID: 4800000, guid: 3514cc2676a6c4db294c28459f22c359, type: 3}
@@ -1953,12 +1953,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dafc90245bfe9e2408e358f71deace2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SampleCount: 26
-  ScatteringCoef: 0.232
-  ExtinctionCoef: 0.01
-  SkyboxExtinctionCoef: 0.9
-  MieG: 0.1
-  HeightFog: 1
+  SampleCount: 12
+  ScatteringCoef: 0.3
+  ExtinctionCoef: 0.003
+  SkyboxExtinctionCoef: 1
+  MieG: 0.12
+  HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
   Noise: 0
@@ -1966,7 +1966,7 @@ MonoBehaviour:
   NoiseIntensity: 1
   NoiseIntensityOffset: 0.3
   NoiseVelocity: {x: 3, y: 3}
-  MaxRayLength: 400
+  MaxRayLength: 64
 --- !u!1 &486391438
 GameObject:
   m_ObjectHideFlags: 0
@@ -4839,13 +4839,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1021763700}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 612d4ace1b3024813a40b743131176ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _startDistance: 1
-  _fogdensity: 0.008
+  _fogdensity: 0.005
   _useRadialDistance: 0
   _fadeToSkybox: 1
   _shader: {fileID: 4800000, guid: 3514cc2676a6c4db294c28459f22c359, type: 3}
@@ -4855,7 +4855,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1021763700}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eed1d9cbe64423499f1fefc0ce50417, type: 3}
   m_Name: 
@@ -4909,7 +4909,7 @@ MonoBehaviour:
   isThisLeftHand: 1
   SteamVRCameraRig: {fileID: 1101788886}
   SimulatorCameraRig: {fileID: 902678579}
-  fly_speed: 9
+  fly_speed: 20
   playarea: {fileID: 72477889}
   collision_detection: 0
   gravity: 0
@@ -9691,7 +9691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1980632649
 Transform:
   m_ObjectHideFlags: 0
