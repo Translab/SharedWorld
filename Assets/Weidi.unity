@@ -156,42 +156,62 @@ Prefab:
     - target: {fileID: 82171293935203252, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
         type: 2}
       propertyPath: MaxDistance
-      value: 180
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 82990437981395948, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
         type: 2}
       propertyPath: MaxDistance
-      value: 180
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 82138086144415424, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
         type: 2}
       propertyPath: MaxDistance
-      value: 180
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 82902157484840974, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
         type: 2}
       propertyPath: MaxDistance
-      value: 180
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 82171293935203252, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
         type: 2}
       propertyPath: MinDistance
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 82990437981395948, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
         type: 2}
       propertyPath: MinDistance
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 82138086144415424, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
         type: 2}
       propertyPath: MinDistance
-      value: 15
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 82902157484840974, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
         type: 2}
       propertyPath: MinDistance
-      value: 15
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 82990437981395948, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
+        type: 2}
+      propertyPath: rolloffMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82171293935203252, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
+        type: 2}
+      propertyPath: rolloffMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82138086144415424, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
+        type: 2}
+      propertyPath: rolloffMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82902157484840974, guid: fe6d38a3122f54f78a5cf7a32a05bd97,
+        type: 2}
+      propertyPath: rolloffMode
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe6d38a3122f54f78a5cf7a32a05bd97, type: 2}

@@ -1,23 +1,20 @@
 using System;
 using UnityEngine;
 
-namespace UnityStandardAssets.Utility
+namespace RaymarchingToolkit.Examples
 {
-    public class AutoMoveAndRotate : MonoBehaviour
+    public class RaymarchExampleAutoMoveAndRotate : MonoBehaviour
     {
         public Vector3andSpace moveUnitsPerSecond;
         public Vector3andSpace rotateDegreesPerSecond;
         public bool ignoreTimescale;
         private float m_LastRealTime;
 
-
         private void Start()
         {
             m_LastRealTime = Time.realtimeSinceStartup;
         }
 
-
-        // Update is called once per frame
         private void Update()
         {
             float deltaTime = Time.deltaTime;
@@ -29,7 +26,6 @@ namespace UnityStandardAssets.Utility
             transform.Translate(moveUnitsPerSecond.value*deltaTime, moveUnitsPerSecond.space);
             transform.Rotate(rotateDegreesPerSecond.value*deltaTime, moveUnitsPerSecond.space);
         }
-
 
         [Serializable]
         public class Vector3andSpace
