@@ -91,9 +91,9 @@ public class Scatter : MonoBehaviour {
 			} else {
 			}
 
-		} else if (lerp_value >= 1 + morph_stay_time && morph_step != geo_targets.Length - 1) {
+		} else if (lerp_value >= 1 + morph_stay_time && morph_step < geo_targets.Length - 1) {
 			lerp_value = 0;
-			morph_step += 1;
+			
 			if (moving){
 				if (morph_step + 1 != geo_targets.Length) {
 					Matrix4x4 m = Matrix4x4.TRS (geo_targets [morph_step + 1].transform.position, geo_targets [morph_step + 1].transform.rotation, geo_targets [morph_step + 1].transform.localScale * geo_scale);
@@ -114,6 +114,8 @@ public class Scatter : MonoBehaviour {
 					}
 				}
 			}
+			//morph step change after position reset?
+			morph_step += 1;
 		} else if (lerp_value >= 1 + morph_stay_time && morph_step == geo_targets.Length - 1) {
 			if (skip_first_target) {
 				morph_step = 1;
