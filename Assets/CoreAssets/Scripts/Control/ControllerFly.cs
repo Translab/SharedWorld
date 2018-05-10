@@ -7,7 +7,7 @@ namespace VRTK{
 	using System.Collections.Generic;
 	using UnityEngine;
 
-	public class controller_fly : MonoBehaviour{
+	public class ControllerFly : MonoBehaviour{
 
 		//gameobject reference 
 		[Tooltip("Switch between Simulator and SteamVR CameraRigs")]
@@ -39,7 +39,7 @@ namespace VRTK{
 		[Tooltip("if true, you need to have 'collision_detect' script and also 'VRTK_HeadsetCollision' script attached to PlayArea")]
 		public bool collision_detection = true; //need to add a "VRTK_HeadsetCollision" script in your playarea object
 
-		private Collision_detect collision_detect;
+		private CollisionDetect collision_detect;
 		private Vector3 bodyPositionColliding; //temporal vector3 to record the body position of the colliding moment
 		private bool departureFromLanding = false; 
 
@@ -99,7 +99,7 @@ namespace VRTK{
 				
 			//
 			if (collision_detection) {
-				collision_detect = playarea.GetComponent<Collision_detect> ();
+				collision_detect = playarea.GetComponent<CollisionDetect> ();
 			}
 			grav_acce_max = fly_speed * 0.1f * gravity_factor;
 		}

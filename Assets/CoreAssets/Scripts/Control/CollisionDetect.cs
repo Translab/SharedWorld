@@ -7,11 +7,14 @@ namespace VRTK{
 	using System.Collections.Generic;
 	using UnityEngine;
 
-	public class Collision_detect : MonoBehaviour {
+	[RequireComponent(typeof(VRTK_HeadsetCollision))]
+	public class CollisionDetect : MonoBehaviour {
 
 		[Tooltip("don't need to touch, for read by controller fly script")]
+		[System.NonSerialized]
 		public bool colliding = false; //don't need to touch, for read by controller fly script
 		[Tooltip("not used, for debug use")]
+		[System.NonSerialized]
 		public Transform colliding_point; //not used, for debug use
 		[Tooltip("determines the size of the collider")]
 		public float userHeight = 1.6f; //determines the size of the collider

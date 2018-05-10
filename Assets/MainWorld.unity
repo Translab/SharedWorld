@@ -615,8 +615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5055bb6c789e26f4b8f323f123bf44af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliding: 0
-  colliding_point: {fileID: 0}
   userHeight: 1.6
 --- !u!1 &82946515
 GameObject:
@@ -4909,7 +4907,7 @@ MonoBehaviour:
   isThisLeftHand: 1
   SteamVRCameraRig: {fileID: 1101788886}
   SimulatorCameraRig: {fileID: 902678579}
-  fly_speed: 20
+  fly_speed: 30
   playarea: {fileID: 72477889}
   collision_detection: 0
   gravity: 0
