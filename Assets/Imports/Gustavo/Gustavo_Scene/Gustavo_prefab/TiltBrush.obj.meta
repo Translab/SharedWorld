@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: fb6d87b4eaeb478459f28f1400785d16
-timeCreated: 1524439334
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -16,6 +14,7 @@ ModelImporter:
     2100008: Material_5
     2100010: Material_6
     2100012: Material_7
+    2100014: DefaultMat
     2300000: Default
     3300000: Default
     4300000: Default
@@ -38,6 +37,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

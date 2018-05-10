@@ -1,12 +1,33 @@
 fileFormatVersion: 2
 guid: 0a28255bbd112983d000f80b25bb6539
-timeCreated: 18446744011573954816
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cube
+    100004: Cylinder
+    400000: //RootNode
+    400002: Cube
+    400004: Cylinder
+    2300000: Cube
+    2300002: Cylinder
+    3300000: Cube
+    3300002: Cylinder
     4300000: Cube
     4300002: Cylinder
-  externalObjects: {}
+    7400000: Default Take
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__beam1_png
+    second: {fileID: 2100000, guid: 36c9b37b12c60934bac2925869e0751d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: None__beam_psd
+    second: {fileID: 2100000, guid: e6a0e46667209444d9637ba222d1877d, type: 2}
   materials:
     importMaterials: 1
     materialName: 3
@@ -25,6 +46,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
