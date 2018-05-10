@@ -106,7 +106,7 @@ namespace VRTK{
 
 
 		void Update(){
-			//Debug.Log (trigger_pressure);
+			Debug.Log (trigger_pressure);
 			facing_direction = Pointing_hand.transform.rotation * Vector3.forward;
 			reference_distance = Mathf.Abs(CameraRig.transform.position.y - landing_height);
 
@@ -196,22 +196,26 @@ namespace VRTK{
 			
 		private void DoTriggerTouchStart(object sender, ControllerInteractionEventArgs e)
 		{
-			flying = true;
-			trigger_pressure = e.buttonPressure;
+			//flying = true;
+			//trigger_pressure = e.buttonPressure;
 		}
 
 		private void DoTriggerTouchEnd(object sender, ControllerInteractionEventArgs e)
 		{
 			//DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "untouched", e);
-			flying = false;
-			trigger_pressure = 0.0f;
+			//flying = false;
+			//trigger_pressure = 0.0f;
 
 		}
 
 		private void DoTriggerAxisChanged(object sender, ControllerInteractionEventArgs e)
 		{
 			trigger_pressure = e.buttonPressure;
-
+			if (trigger_pressure > 0){
+				flying = true;
+			} else if (trigger_pressure ==0 ){
+				flying = false;
+			}
 			//DebugLogger(VRTK_ControllerReference.GetRealIndex(e.controllerReference), "TRIGGER", "axis changed", e);
 		}
 	}
