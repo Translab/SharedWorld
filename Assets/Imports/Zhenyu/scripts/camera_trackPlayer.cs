@@ -10,8 +10,6 @@ public class camera_trackPlayer : MonoBehaviour {
 	//PID pid_yaw;
 	// Use this for initialization
 	void Start () {
-		playerHead = GameObject.Find("PlayArea");
-		//playerHead = GameObject.Find("MainCamera");
 		//pitch = 0f;
 		yaw = 0f;
 		//pid_yaw = new PID (1f, 0.9f, 0);
@@ -19,6 +17,8 @@ public class camera_trackPlayer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		playerHead = GameObject.Find("[CameraRig]");
+		//playerHead = GameObject.Find("MainCamera");
 		//Vector3 camPosition = transform.position;
 		//Vector3 playPosition = playerHead.transform.position;
 		Vector3 rd = playerHead.transform.position - transform.position;  //relativeDistance
