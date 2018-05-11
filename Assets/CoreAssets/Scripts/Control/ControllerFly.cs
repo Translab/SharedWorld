@@ -24,6 +24,7 @@ namespace VRTK{
 		//flying param
 		[Tooltip("speed of fly")]
 		public float fly_speed = 1.0f; //fly speed by default 1.0
+		public int speed_log_factor = 2;
 
 		private Vector3 facing_direction; //just for reference, showing where your pointing object is facing
 		private Vector3 fly_velocity;
@@ -210,7 +211,7 @@ namespace VRTK{
 
 		private void DoTriggerAxisChanged(object sender, ControllerInteractionEventArgs e)
 		{
-			trigger_pressure = Mathf.Pow(e.buttonPressure, 2);
+			trigger_pressure = Mathf.Pow(e.buttonPressure, speed_log_factor);
 			if (trigger_pressure > 0){
 				flying = true;
 			} else if (trigger_pressure ==0 ){

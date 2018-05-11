@@ -529,8 +529,8 @@ GameObject:
   - component: {fileID: 72477890}
   - component: {fileID: 72477892}
   - component: {fileID: 72477891}
-  - component: {fileID: 72477894}
   - component: {fileID: 72477893}
+  - component: {fileID: 72477894}
   m_Layer: 0
   m_Name: PlayArea
   m_TagString: Untagged
@@ -4907,7 +4907,8 @@ MonoBehaviour:
   isThisLeftHand: 1
   SteamVRCameraRig: {fileID: 1101788886}
   SimulatorCameraRig: {fileID: 902678579}
-  fly_speed: 30
+  fly_speed: 120
+  speed_log_factor: 3
   playarea: {fileID: 72477889}
   collision_detection: 0
   gravity: 0
