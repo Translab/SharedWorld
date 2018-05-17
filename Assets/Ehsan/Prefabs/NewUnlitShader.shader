@@ -3,6 +3,7 @@
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
+		_Sensitivity ("Sensitivity", Range(0.0,20.0)) = 1.0
 	}
 	SubShader
 	{
@@ -19,10 +20,12 @@
 			
 			#include "UnityCG.cginc"
 
+			uniform float4 target1;
+			uniform float4 target2;
+			float _Sensitivity;
 			struct appdata
 			{
 				float4 vertex : POSITION;
-				float4 color : COLOR;
 				float2 uv : TEXCOORD0;
 			};
 
@@ -31,7 +34,7 @@
 				float2 uv : TEXCOORD0;
 				UNITY_FOG_COORDS(1)
 				float4 vertex : SV_POSITION;
-				float4 color : COLOR;
+				float4 worldpos : TEXCOORD1;
 			};
 
 			sampler2D _MainTex;
@@ -41,8 +44,8 @@
 			{
 				v2f o;
 				o.vertex = UnityObjectToClipPos(v.vertex);
-				o.color = v.color;
 				o.uv = TRANSFORM_TEX(v.uv, _MainTex);
+				o.worldpos = mul(unity_ObjectToWorld, v.vertex);
 				UNITY_TRANSFER_FOG(o,o.vertex);
 				return o;
 			}
@@ -50,7 +53,9 @@
 			fixed4 frag (v2f i) : SV_Target
 			{
 				// sample the texture
-				fixed4 col = tex2D(_MainTex, float2(0,i.color.r));
+				float d = sqrt(length(target1.xyz - i.worldpos.xyz));
+				d+= sqrt(length(target2.xyz - i.worldpos.xyz));
+				fixed4 col = tex2D(_MainTex, float2(0.0, 1.0/(d*_Sensitivity)));
 				// apply fog
 				UNITY_APPLY_FOG(i.fogCoord, col);
 				return col;
