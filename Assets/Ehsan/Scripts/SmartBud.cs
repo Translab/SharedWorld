@@ -21,8 +21,12 @@ public class SmartBud : MonoBehaviour {
     private float timer;
     private float attentime;
     private float attentimer;
-	// Use this for initialization
-	void Start () {
+    private AudioSource aud;
+    // Use this for initialization
+    void Start () {
+
+        aud = GetComponent<AudioSource>();
+
         transform.position = transform.position+ new Vector3(Random.Range(-1f, 1f), Random.Range(0.0f, 0.0f), Random.Range(-1f, 1f)) * 100;
         atten = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), Random.Range(-1f, 1f)) * 1000f;
         attentime = Random.Range(3f, 20f);
@@ -48,7 +52,8 @@ public class SmartBud : MonoBehaviour {
             GrabAttention();
             timer = 0f;
             attentime = Random.Range(3f, 10f);
-
+            aud.time = Random.Range(0, aud.clip.length);
+            aud.Play();
         }
 
         if (attentimer > 3f)

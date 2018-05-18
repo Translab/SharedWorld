@@ -6,6 +6,7 @@ public class Giant : MonoBehaviour {
     Rigidbody myrigidbody;
     public float forceamount;
     public float stableheight;
+
 	// Use this for initialization
 	void Start () {
         myrigidbody = GetComponent<Rigidbody>();
