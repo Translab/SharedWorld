@@ -46,13 +46,13 @@ public class FlyLimit : MonoBehaviour
             }
             entered = true;
         }
-        Debug.Log ("entereerrreed");
+        Debug.Log ("speed limit zone entered");
     }
     void OnTriggerStay(Collider other)
     {
         if (VRTK.VRTK_PlayerObject.IsPlayerObject(other.gameObject))
         {
-           Debug.Log ("stayinnnnn");
+           //Debug.Log ("stayinnnnn");
            if (collision_state == true){
                 controllerfly.collision_detection = false;
            }
@@ -67,7 +67,7 @@ public class FlyLimit : MonoBehaviour
             if (collision_state == true){
                 controllerfly.collision_detection = true;
             }
-            Debug.Log ("lefttt");
+            Debug.Log ("speed limit zone left");
         }
         
     }
