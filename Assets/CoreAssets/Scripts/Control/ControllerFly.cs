@@ -74,8 +74,8 @@ namespace VRTK{
 		private Vector3 floating_temp_pos = new Vector3(0,0,0);
 
 		void Start(){
-			//GetComponent<VRTK_ControllerEvents> ().TriggerPressed += new ControllerInteractionEventHandler (DoTriggerPressed);
-			//GetComponent<VRTK_ControllerEvents> ().TriggerReleased += new ControllerInteractionEventHandler (DoTriggerReleased);
+			GetComponent<VRTK_ControllerEvents> ().TriggerPressed += new ControllerInteractionEventHandler (DoTriggerPressed);
+			GetComponent<VRTK_ControllerEvents> ().TriggerReleased += new ControllerInteractionEventHandler (DoTriggerReleased);
 			GetComponent<VRTK_ControllerEvents>().TriggerAxisChanged += new ControllerInteractionEventHandler(DoTriggerAxisChanged);
 			GetComponent<VRTK_ControllerEvents>().TriggerTouchStart += new ControllerInteractionEventHandler(DoTriggerTouchStart);
 			GetComponent<VRTK_ControllerEvents>().TriggerTouchEnd += new ControllerInteractionEventHandler(DoTriggerTouchEnd);
@@ -194,8 +194,24 @@ namespace VRTK{
 			VRTK_Logger.Info("Controller on index '" + index + "' " + button + " has been " + action
 				+ " with a pressure of " + e.buttonPressure + " / trackpad axis at: " + e.touchpadAxis + " (" + e.touchpadAngle + " degrees)");
 		}
-			
-		private void DoTriggerTouchStart(object sender, ControllerInteractionEventArgs e)
+
+        private void DoTriggerPressed(object sender, ControllerInteractionEventArgs e)
+        {
+            if (useSimulator)
+            {
+                flying = true;
+                trigger_pressure = 0.5f;
+            }
+        }
+        private void DoTriggerReleased(object sender, ControllerInteractionEventArgs e)
+        {
+            if (useSimulator)
+            {
+                flying = false;
+                trigger_pressure = 0.0f;
+            }
+        }
+        private void DoTriggerTouchStart(object sender, ControllerInteractionEventArgs e)
 		{
 			//flying = true;
 			//trigger_pressure = e.buttonPressure;
