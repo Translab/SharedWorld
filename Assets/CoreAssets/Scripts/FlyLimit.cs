@@ -34,7 +34,7 @@ public class FlyLimit : MonoBehaviour
         {
             controllerfly.fly_speed = original_limit;
         }
-        Debug.Log((bool)controllerfly.collision_detection);
+        //Debug.Log((bool)controllerfly.collision_detection);
 
     }
 
