@@ -9,6 +9,9 @@ TagManager:
   - TeleportIgnore
   - generator
   - self
+  - PhysicsPassthroughDuplicate
+  - SKSEditorTemp
+  - PhysDupe
   layers:
   - Default
   - TransparentFX
@@ -18,9 +21,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - CustomRenderer
+  - CustomRendererOnly
+  - CustomRendererPlaceholder
   - 
   - 
   - 

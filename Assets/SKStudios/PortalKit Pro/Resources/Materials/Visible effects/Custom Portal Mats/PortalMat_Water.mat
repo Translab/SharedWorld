@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: PortalMat_Water
+  m_Shader: {fileID: 4800000, guid: 01618166444f70741b3522857ce668d2, type: 3}
+  m_ShaderKeywords: _EMISSION _PERFECTREFLECTION_ON
+  m_LightmapFlags: 1
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - <noninit>:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlphaTexture:
+        m_Texture: {fileID: 2800000, guid: a2b7701bb1ab51b43b98c8beeaead254, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: a70da71cded33194cb137e3191aa7d43, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - <noninit>: 0
+    - _Alpha: 1
+    - _CustomRenderInFront: 0
+    - _Glossiness: 1
+    - _Metallic: 0
+    - _NormalStrength: 0.27
+    - _PerfectReflection: 1
+    m_Colors:
+    - <noninit>: {r: 0, g: 3.5774037e+12, b: 0, a: 3.577387e+12}
+    - _Color: {r: 0, g: 1, b: 0.83448267, a: 0.259}
+    - _Emission: {r: 0.6544118, g: 0.7282962, b: 1, a: 1}

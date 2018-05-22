@@ -1,0 +1,2 @@
+Cubemap for renderer previews made by Emil Persson, aquired from http://www.humus.name/index.php?page=Textures&ID=20
+All images in *this folder only* are bound by the Creative Commons Attribution 3.0 Unported License, here: https://creativecommons.org/licenses/by/3.0/legalcode
