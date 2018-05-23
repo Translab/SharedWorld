@@ -1,0 +1,40 @@
+# Blender MTL File: 'firstFloor4.blend'
+# Material Count: 4
+
+newmtl elevator_floor
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd /Users/primary1/Documents/Blender/textures/MarbleNoisy0061_1_S.jpg
+
+newmtl elevator_handBar
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl elevator_metal
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd Hard Surface Free/Shared/Textures/Brushed_Spec.png
+
+newmtl elevator_panels
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.553652 0.553652 0.553652
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2

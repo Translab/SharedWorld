@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: daae2d950c6f444478c4ae7811a74c43
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: BezierCurve.009
+    100002: BezierCurve.010
+    100004: BezierCurve.011
+    100006: BezierCurve.016
+    100008: BezierCurve.017
+    100010: Circle.013
+    100012: Circle.014
+    100014: Circle.015
+    100016: Circle.016
+    100018: Cube.006
+    100020: Cube.008
+    100022: Cube.010
+    100024: Cube.011
+    100026: //RootNode
+    100028: Text.014
+    400000: BezierCurve.009
+    400002: BezierCurve.010
+    400004: BezierCurve.011
+    400006: BezierCurve.016
+    400008: BezierCurve.017
+    400010: Circle.013
+    400012: Circle.014
+    400014: Circle.015
+    400016: Circle.016
+    400018: Cube.006
+    400020: Cube.008
+    400022: Cube.010
+    400024: Cube.011
+    400026: //RootNode
+    400028: Text.014
+    2300000: BezierCurve.009
+    2300002: BezierCurve.010
+    2300004: BezierCurve.011
+    2300006: BezierCurve.016
+    2300008: BezierCurve.017
+    2300010: Circle.013
+    2300012: Circle.014
+    2300014: Circle.015
+    2300016: Circle.016
+    2300018: Cube.006
+    2300020: Cube.008
+    2300022: Cube.010
+    2300024: Cube.011
+    2300026: //RootNode
+    2300028: Text.014
+    3300000: BezierCurve.009
+    3300002: BezierCurve.010
+    3300004: BezierCurve.011
+    3300006: BezierCurve.016
+    3300008: BezierCurve.017
+    3300010: Circle.013
+    3300012: Circle.014
+    3300014: Circle.015
+    3300016: Circle.016
+    3300018: Cube.006
+    3300020: Cube.008
+    3300022: Cube.010
+    3300024: Cube.011
+    3300026: //RootNode
+    3300028: Text.014
+    4300000: Plane.093
+    4300002: Cube.010
+    4300004: BezierCurve.009
+    4300006: BezierCurve.010
+    4300008: BezierCurve.016
+    4300010: BezierCurve.017
+    4300012: BezierCurve.011
+    4300014: Circle.016
+    4300016: Circle.015
+    4300018: Cube.011
+    4300020: Cube.006
+    4300022: Circle.013
+    4300024: Cube.008
+    4300026: Circle.014
+    4300028: Text.014
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1.5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

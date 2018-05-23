@@ -11,8 +11,6 @@ public class FlyLimit : MonoBehaviour
 
     public float speed_limit = 0.5f;
     private float original_limit = 1.0f;
-    public bool entered = false;
-    public bool staying = false;
     private bool collision_state;
 
     // Use this for initialization
@@ -26,15 +24,6 @@ public class FlyLimit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (entered)
-        {
-            controllerfly.fly_speed = speed_limit;
-        }
-        else
-        {
-            controllerfly.fly_speed = original_limit;
-        }
-        //Debug.Log((bool)controllerfly.collision_detection);
 
     }
 
@@ -45,9 +34,10 @@ public class FlyLimit : MonoBehaviour
             if (collision_state == true){
                 controllerfly.collision_detection = false;
             }
-            entered = true;
+            controllerfly.fly_speed = speed_limit;
+             Debug.Log ("speed limit zone entered");
         }
-        Debug.Log ("speed limit zone entered");
+       
     }
     void OnTriggerStay(Collider other)
     {
@@ -57,17 +47,16 @@ public class FlyLimit : MonoBehaviour
            if (collision_state == true){
                 controllerfly.collision_detection = false;
            }
-            //staying = true;
         }
     }
     void OnTriggerExit(Collider other)
     {
         if (VRTK.VRTK_PlayerObject.IsPlayerObject(other.gameObject))
         {
-            entered = false;
             if (collision_state == true){
                 controllerfly.collision_detection = true;
             }
+            controllerfly.fly_speed = original_limit;
             Debug.Log ("speed limit zone left");
         }
         
