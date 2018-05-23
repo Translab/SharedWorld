@@ -53,9 +53,14 @@
 			fixed4 frag (v2f i) : SV_Target
 			{
 				// sample the texture
-				float d = sqrt(length(target1.xyz - i.worldpos.xyz));
-				d+= sqrt(length(target2.xyz - i.worldpos.xyz));
-				fixed4 col = tex2D(_MainTex, float2(0.0, 1.0/(d*_Sensitivity)));
+				float d1 = sqrt(length(target1.xyz - i.worldpos.xyz));
+
+				float d2 = sqrt(length(target2.xyz - i.worldpos.xyz));
+
+				d1 = pow(d1,2.0);
+				d2 = pow(d2,2.0);
+				//d+= length(target2.xyz - i.worldpos.xyz);
+				fixed4 col = tex2D(_MainTex, float2(0.0, 1.0/(d1*_Sensitivity))+float2(0.0, 1.0/(d2*_Sensitivity)));
 				// apply fog
 				UNITY_APPLY_FOG(i.fogCoord, col);
 				return col;
