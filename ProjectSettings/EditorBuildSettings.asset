@@ -23,9 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Gustavo.unity
     guid: c25dab151e4a93b4fa76b2c760ee6ffe
-  - enabled: 1
-    path: Assets/Yin.unity
-    guid: 27e96abe66c2e7b4f95a05b52c2b10a9
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Ehsan.unity
     guid: 449019c55d84ee84cba0cbd1786a4acd
@@ -41,3 +41,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Anshul.unity
     guid: 4f742c6efa60046419b16db4936a6f02
+  m_configObjects: {}
