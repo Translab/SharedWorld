@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 1d2dfc301b69644f992804d77d41a081
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: A-EOS-FRZ_curve_.005
+    100002: BezierCurve.013
+    100004: BezierCurve.014
+    100006: BezierCurve.015
+    100008: Cube.014
+    100010: //RootNode
+    100012: Plane.106
+    100014: Plane.107
+    100016: Plane.108
+    100018: Plane.109
+    100020: Plane.110
+    100022: Plane.111
+    100024: Plane.112
+    400000: A-EOS-FRZ_curve_.005
+    400002: BezierCurve.013
+    400004: BezierCurve.014
+    400006: BezierCurve.015
+    400008: Cube.014
+    400010: //RootNode
+    400012: Plane.106
+    400014: Plane.107
+    400016: Plane.108
+    400018: Plane.109
+    400020: Plane.110
+    400022: Plane.111
+    400024: Plane.112
+    2100000: elevator_metal
+    2100002: elevator_floor
+    2100004: elevator_panels
+    2100006: elevator_handBar
+    2300000: A-EOS-FRZ_curve_.005
+    2300002: BezierCurve.013
+    2300004: BezierCurve.014
+    2300006: BezierCurve.015
+    2300008: Cube.014
+    2300010: Plane.106
+    2300012: Plane.107
+    2300014: Plane.108
+    2300016: Plane.109
+    2300018: Plane.110
+    2300020: Plane.111
+    2300022: Plane.112
+    3300000: A-EOS-FRZ_curve_.005
+    3300002: BezierCurve.013
+    3300004: BezierCurve.014
+    3300006: BezierCurve.015
+    3300008: Cube.014
+    3300010: Plane.106
+    3300012: Plane.107
+    3300014: Plane.108
+    3300016: Plane.109
+    3300018: Plane.110
+    3300020: Plane.111
+    3300022: Plane.112
+    4300000: Cube.014
+    4300002: Plane.111
+    4300004: BezierCurve.014
+    4300006: Plane.112
+    4300008: Plane.108
+    4300010: Plane.110
+    4300012: Plane.109
+    4300014: BezierCurve.015
+    4300016: Plane.106
+    4300018: Plane.107
+    4300020: BezierCurve.013
+    4300022: A-EOS-FRZ_curve_.005
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: elevator_floor
+    second: {fileID: 2100000, guid: ff84cc69072dd4ce19a01fc4268e7346, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: elevator_handBar
+    second: {fileID: 2100000, guid: f51c2d8debafd45e58d7260cfa20dd6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: elevator_metal
+    second: {fileID: 2100000, guid: 533ff7953623a4321aad9ecc7021891e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: elevator_panels
+    second: {fileID: 2100000, guid: 9ab9bfd4030b049babeee7dcff466943, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
