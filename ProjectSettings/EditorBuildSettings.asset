@@ -41,4 +41,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Anshul.unity
     guid: 4f742c6efa60046419b16db4936a6f02
+  - enabled: 1
+    path: Assets/SEMIOTICSTUDYi.unity
+    guid: 3d06b8ebbed49b245ac6921c9a052168
+  - enabled: 1
+    path: Assets/Yin.unity
+    guid: 79d70900b60c64844a8c96e3c28ca55c
+  - enabled: 1
+    path: Assets/Alexis.unity
+    guid: aa89932b9e7c5834f96a7d1b49bf6685
+  - enabled: 1
+    path: Assets/Enrica.unity
+    guid: 1e825cc7bb5506b4b8a294d39a8539a9
   m_configObjects: {}

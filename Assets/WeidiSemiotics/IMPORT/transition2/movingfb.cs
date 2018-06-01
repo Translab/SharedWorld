@@ -20,6 +20,6 @@ public class movingfb : MonoBehaviour
         }
         if (countdown <= -20.0f)
             countdown = 20.0f;
-        print(countdown);
+        //print(countdown);
     }
 }
