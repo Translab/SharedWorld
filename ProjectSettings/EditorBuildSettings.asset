@@ -53,4 +53,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Enrica.unity
     guid: 1e825cc7bb5506b4b8a294d39a8539a9
+  - enabled: 1
+    path: Assets/JingMiniIncarnation/Scenes/wonderland.unity
+    guid: 18a672da257d8fd4bb658d3450e9d09f
+  - enabled: 1
+    path: Assets/AlexisInvisibleRoom.unity
+    guid: 0976d8818ae558c4ab1651d32a6b3b75
+  - enabled: 1
+    path: Assets/Ehsan/EhsanPrivate.unity
+    guid: f24841089d25e704ca2397215551e2bf
   m_configObjects: {}
