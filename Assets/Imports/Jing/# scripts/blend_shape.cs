@@ -6,10 +6,10 @@ public class blend_shape : MonoBehaviour {
 	int blendShapeCount;
 	SkinnedMeshRenderer skinnedMeshRenderer;
 	Mesh skinnedMesh;
-	float blendOne = 0f;
-	float blendTwo = 0f;
+	private int index = 0;
+	private bool increasing = true;
+	float blendAmount = 0f;
 	public float blendSpeed = 1f;
-	bool blendOneFinished = false;
 
 	void Awake ()
 	{
@@ -20,16 +20,34 @@ public class blend_shape : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		blendShapeCount = skinnedMesh.blendShapeCount; 
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		blendOne += blendSpeed;
-		skinnedMeshRenderer.SetBlendShapeWeight (0, blendOne);
-		if (blendOne > 100f || blendOne < 0.0f) {
-			blendSpeed = -blendSpeed;
-		}
 
+		blendAmount += blendSpeed;
+		skinnedMeshRenderer.SetBlendShapeWeight (index, blendAmount);
+		if (increasing) {
+			if (blendAmount > 100.0f) {
+				if (index < blendShapeCount - 1) {
+					index++;
+					blendAmount = 0;
+				} else {
+					blendSpeed = -blendSpeed;
+					increasing = false;
+				}
+			}
+		} else {
+			if (blendAmount < 0.0f) {
+				if (index > 0) {
+					index--;
+					blendAmount = 100.0f;
+				} else {
+					blendSpeed = -blendSpeed;
+					increasing = true;
+				}
+
+			}
+		}
 	}
 }
