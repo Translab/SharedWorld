@@ -646,7 +646,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 133991239}
-  m_LocalRotation: {x: -0.40416983, y: -0.5802127, z: 0.5802127, w: -0.40416983}
+  m_LocalRotation: {x: -0.68663293, y: -0.16892387, z: 0.16892387, w: -0.68663293}
   m_LocalPosition: {x: 0, y: 0.44, z: 0}
   m_LocalScale: {x: 1.7217813, y: 1.7217818, z: 1.7217818}
   m_Children:
@@ -12235,7 +12235,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 617573221}
-  m_LocalRotation: {x: -0.6268134, y: -0.32726905, z: -0.32726905, w: 0.6268134}
+  m_LocalRotation: {x: -0.70196956, y: -0.08508104, z: -0.08508104, w: 0.70196956}
   m_LocalPosition: {x: 0, y: 0.82, z: -0}
   m_LocalScale: {x: 4.3740754, y: 4.3740788, z: 4.3740788}
   m_Children: []
@@ -18164,10 +18164,6 @@ GameObject:
   - component: {fileID: 824768584}
   - component: {fileID: 824768592}
   - component: {fileID: 824768591}
-  - component: {fileID: 824768590}
-  - component: {fileID: 824768589}
-  - component: {fileID: 824768588}
-  - component: {fileID: 824768587}
   - component: {fileID: 824768586}
   - component: {fileID: 824768585}
   m_Layer: 0
@@ -18216,92 +18212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 327af88ee208cb1428e20686bb9a6ec2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &824768587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 824768583}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae8fdd72d8cd6342b975f34e0fb43fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TwoUsers: 1
-  ComputeUserMap: 1
-  ComputeColorMap: 1
-  DisplayUserMap: 1
-  DisplayColorMap: 1
-  DisplaySkeletonLines: 1
-  DisplayMapsWidthPercent: 20
-  SensorHeight: 1
-  SensorAngle: 0
-  MinUserDistance: 1
-  MaxUserDistance: 0
-  DetectClosestUser: 1
-  IgnoreInferredJoints: 1
-  smoothing: 1
-  UseBoneOrientationsFilter: 0
-  UseClippedLegsFilter: 0
-  UseBoneOrientationsConstraint: 1
-  UseSelfIntersectionConstraint: 0
-  Player1Avatars: []
-  Player2Avatars: []
-  Player1CalibrationPose: 0
-  Player2CalibrationPose: 0
-  Player1Gestures: 
-  Player2Gestures: 
-  MinTimeBetweenGestures: 0.7
-  GestureListeners: []
-  CalibrationText: {fileID: 0}
-  HandCursor1: {fileID: 0}
-  HandCursor2: {fileID: 0}
-  ControlMouseCursor: 0
-  GesturesDebugText: {fileID: 0}
-  usersLblTex: {fileID: 0}
-  usersClrTex: {fileID: 0}
-  usersDepthMap: 
---- !u!114 &824768588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 824768583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b9637035d55784cbbe08ec594f34d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  GestureInfo: {fileID: 0}
---- !u!114 &824768589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 824768583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eed1d9cbe64423499f1fefc0ce50417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Resolution: 1
-  DefaultSpotCookie: {fileID: 2800000, guid: 5157bf6d690b6df458f6c0ce0c06d329, type: 3}
---- !u!114 &824768590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 824768583}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 612d4ace1b3024813a40b743131176ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _startDistance: 1
-  _fogdensity: 0.005
-  _useRadialDistance: 0
-  _fadeToSkybox: 1
-  _shader: {fileID: 4800000, guid: 3514cc2676a6c4db294c28459f22c359, type: 3}
 --- !u!124 &824768591
 Behaviour:
   m_ObjectHideFlags: 0
