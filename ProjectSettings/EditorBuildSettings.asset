@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ehsan/EhsanPrivate.unity
     guid: f24841089d25e704ca2397215551e2bf
+  - enabled: 1
+    path: Assets/Nathan/secondFloor.unity
+    guid: 522907436c02b48898779bd0908791da
   m_configObjects: {}

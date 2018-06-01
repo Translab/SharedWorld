@@ -10357,7 +10357,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 627731044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -199.91, y: 13, z: -230}
+  m_LocalPosition: {x: 51.58, y: 1, z: -71.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2086994599}
@@ -15460,6 +15460,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 2fd237464cfe34cf5a5b552c47dd4d99, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6400002, guid: 2fd237464cfe34cf5a5b552c47dd4d99, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2fd237464cfe34cf5a5b552c47dd4d99, type: 2}
@@ -15892,6 +15896,10 @@ Prefab:
     - target: {fileID: 100000, guid: ab7578c21433f43fa8dbed0a7ee5d24a, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ab7578c21433f43fa8dbed0a7ee5d24a, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab7578c21433f43fa8dbed0a7ee5d24a, type: 2}
@@ -31388,7 +31396,6 @@ GameObject:
   - component: {fileID: 1822992534}
   - component: {fileID: 1822992533}
   - component: {fileID: 1822992532}
-  - component: {fileID: 1822992531}
   - component: {fileID: 1822992530}
   m_Layer: 0
   m_Name: Camera (eye)
@@ -31425,19 +31432,6 @@ MonoBehaviour:
   _head: {fileID: 1125796011}
   _ears: {fileID: 757024760}
   wireframe: 0
---- !u!114 &1822992531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1822992528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eed1d9cbe64423499f1fefc0ce50417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Resolution: 1
-  DefaultSpotCookie: {fileID: 2800000, guid: 5157bf6d690b6df458f6c0ce0c06d329, type: 3}
 --- !u!108 &1822992532
 Light:
   m_ObjectHideFlags: 0
