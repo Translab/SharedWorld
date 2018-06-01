@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/CoreAssets/Scenes/VRNetWork.unity
     guid: 0a1cb6a58efacf142a41bcb939955b3e
   - enabled: 1
+    path: Assets/Nathan/secondFloor.unity
+    guid: 522907436c02b48898779bd0908791da
+  - enabled: 1
     path: Assets/MainWorld.unity
     guid: 8ded9afe51f225b4da35ed9f815d76a4
   - enabled: 1
@@ -62,7 +65,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Ehsan/EhsanPrivate.unity
     guid: f24841089d25e704ca2397215551e2bf
-  - enabled: 1
-    path: Assets/Nathan/secondFloor.unity
-    guid: 522907436c02b48898779bd0908791da
   m_configObjects: {}
