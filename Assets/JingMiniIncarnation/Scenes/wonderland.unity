@@ -2425,6 +2425,8 @@ GameObject:
   - component: {fileID: 265664004}
   - component: {fileID: 265664007}
   - component: {fileID: 265664006}
+  - component: {fileID: 265664009}
+  - component: {fileID: 265664008}
   - component: {fileID: 265664005}
   m_Layer: 0
   m_Name: Camera (eye)
@@ -2506,6 +2508,55 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &265664008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 265664003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eed1d9cbe64423499f1fefc0ce50417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Resolution: 1
+  DefaultSpotCookie: {fileID: 2800000, guid: 5157bf6d690b6df458f6c0ce0c06d329, type: 3}
+--- !u!108 &265664009
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 265664003}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &272306336
 GameObject:
   m_ObjectHideFlags: 0
@@ -6217,7 +6268,6 @@ GameObject:
   - component: {fileID: 617690121}
   - component: {fileID: 617690120}
   - component: {fileID: 617690119}
-  - component: {fileID: 617690118}
   - component: {fileID: 617690117}
   m_Layer: 0
   m_Name: '[CameraRig]'
@@ -6257,26 +6307,6 @@ MonoBehaviour:
   head: {fileID: 1245699834}
   leftHand: {fileID: 1453429512}
   rightHand: {fileID: 1075481097}
---- !u!114 &617690118
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 617690115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 462b82ad11d18a749a2a3fa6f49fcc5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EffectorDistance: 600
-  EffectorRecoverySpeed: 0.5
-  Inverted: 0
-  FallOffCurve:
-    serializedVersion: 2
-    m_Curve: []
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!114 &617690119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15709,7 +15739,7 @@ GameObject:
   - component: {fileID: 1054396192}
   - component: {fileID: 1054396191}
   m_Layer: 0
-  m_Name: Particle System (1)
+  m_Name: Portal - MainWorld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26721,16 +26751,16 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1498218621}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dafc90245bfe9e2408e358f71deace2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SampleCount: 8
-  ScatteringCoef: 0.5
+  SampleCount: 14
+  ScatteringCoef: 0.154
   ExtinctionCoef: 0.01
-  SkyboxExtinctionCoef: 0.9
-  MieG: 0.1
+  SkyboxExtinctionCoef: 1
+  MieG: 0.038
   HeightFog: 0
   HeightScale: 0.1
   GroundLevel: 0
@@ -26739,7 +26769,7 @@ MonoBehaviour:
   NoiseIntensity: 1
   NoiseIntensityOffset: 0.3
   NoiseVelocity: {x: 3, y: 3}
-  MaxRayLength: 400
+  MaxRayLength: 120
 --- !u!1 &1499307030
 GameObject:
   m_ObjectHideFlags: 0
