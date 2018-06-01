@@ -34,7 +34,7 @@
 				float2 uv : TEXCOORD0;
 				UNITY_FOG_COORDS(1)
 				float4 vertex : SV_POSITION;
-				float4 worldpos : TEXCOORD1;
+				float4 worldpos : TEXCOORD2;
 			};
 
 			sampler2D _MainTex;
