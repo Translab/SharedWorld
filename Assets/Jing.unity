@@ -642,7 +642,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 300
+  MaxDistance: 120
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -2780,7 +2780,7 @@ Prefab:
     - target: {fileID: 82461047871876540, guid: 93a00ff465b3944a28675ca689464536,
         type: 2}
       propertyPath: MaxDistance
-      value: 300
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 82461047871876540, guid: 93a00ff465b3944a28675ca689464536,
         type: 2}
