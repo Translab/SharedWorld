@@ -12,6 +12,7 @@ TagManager:
   - PhysicsPassthroughDuplicate
   - SKSEditorTemp
   - PhysDupe
+  - localPortal
   layers:
   - Default
   - TransparentFX
