@@ -19812,49 +19812,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &273663024
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 273663026}
-  - component: {fileID: 273663025}
-  m_Layer: 0
-  m_Name: OSC
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &273663025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 273663024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a065e273f9c6cb7478c7460c21ef0f64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inPort: 6969
-  outIP: 127.0.0.1
-  outPort: 6161
---- !u!4 &273663026
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 273663024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &296599526
 GameObject:
   m_ObjectHideFlags: 0
@@ -24897,7 +24854,7 @@ Transform:
   - {fileID: 662119547}
   - {fileID: 1172232926}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &393003365
 GameObject:
@@ -25226,7 +25183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &416795372
 GameObject:
@@ -25863,7 +25820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8f87c7dc0ddb4489fdd1e363740f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  osc: {fileID: 273663025}
+  osc: {fileID: 0}
   handlerNamePos: /PSphereXYZ
   handlerNameScale: /PSphereScale
 --- !u!114 &514904694
@@ -25877,7 +25834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a571f603767eb443a8ec52fb6f04713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  osc: {fileID: 273663025}
+  osc: {fileID: 0}
   handlerName: /PSphereQuatXYZW
 --- !u!23 &514904695
 MeshRenderer:
@@ -26174,7 +26131,7 @@ Transform:
   - {fileID: 1581956843}
   - {fileID: 1589524279}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &590393093
 GameObject:
@@ -41987,7 +41944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2658724f94cd3c46bcb97152699e559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  osc: {fileID: 273663025}
+  osc: {fileID: 0}
 --- !u!20 &866909518
 Camera:
   m_ObjectHideFlags: 0
@@ -42318,6 +42275,63 @@ Transform:
   - {fileID: 451205663}
   m_Father: {fileID: 1498319970}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &921515598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 921515601}
+  - component: {fileID: 921515600}
+  - component: {fileID: 921515599}
+  m_Layer: 0
+  m_Name: OSC (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &921515599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921515598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5070ac5df7f2b5149b81a062a52ad773, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 618050140}
+  MAX_TYPE: 5
+--- !u!114 &921515600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921515598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a065e273f9c6cb7478c7460c21ef0f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inPort: 6969
+  outIP: 127.0.0.1
+  outPort: 6161
+--- !u!4 &921515601
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921515598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &964726972
 GameObject:
@@ -43342,7 +43356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ba019ee015071b489bfe00d00896662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  osc: {fileID: 273663025}
+  osc: {fileID: 0}
 --- !u!114 &1177649989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44633,7 +44647,7 @@ Prefab:
         type: 2}
       propertyPath: osc
       value: 
-      objectReference: {fileID: 273663025}
+      objectReference: {fileID: 0}
     - target: {fileID: 1723545754468848, guid: 1b00d375ca43d584baca901703550681, type: 2}
       propertyPath: m_IsActive
       value: 0
@@ -50873,7 +50887,7 @@ Transform:
   - {fileID: 826601946}
   - {fileID: 81663143}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1707514236
 GameObject:
@@ -51170,7 +51184,7 @@ Transform:
   - {fileID: 1142071341}
   - {fileID: 708425261}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1739804916
 GameObject:
@@ -61745,7 +61759,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2045566437
 GameObject:
@@ -66882,7 +66896,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8f87c7dc0ddb4489fdd1e363740f13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  osc: {fileID: 273663025}
+  osc: {fileID: 0}
   handlerNamePos: /FSphereXYZ
   handlerNameScale: /FSphereScale
 --- !u!114 &2132692048
@@ -66896,7 +66910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a571f603767eb443a8ec52fb6f04713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  osc: {fileID: 273663025}
+  osc: {fileID: 0}
   handlerName: /FSphereQuatXYZW
 --- !u!23 &2132692049
 MeshRenderer:

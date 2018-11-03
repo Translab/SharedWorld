@@ -51,17 +51,17 @@ public class SendDistances : MonoBehaviour {
 				}
 			}
 			
-			string msg = "";
+			// string msg = "";
 			for (int i = 0; i < MAX_TYPE; i++)
 			{
-				msg += i + ") " +  minDistances[i] + " ," ;
+				//msg += i + ") " +  minDistances[i] + " ," ;
 
 				OscMessage message = new OscMessage();
 				message.address = OSCHandle + i;
 				message.values.Add(minDistances[i]);
 				osc.Send(message);
 			}
-			Debug.Log(msg);
+			// Debug.Log(msg);
 		}
 	}
 }

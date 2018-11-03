@@ -858,8 +858,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ff8e924ba56f214d8f59468d58be982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 1.79
-  type: 1
+  size: 2.4
+  type: 2
   offset: {x: 0, y: 0, z: 0}
 --- !u!1 &2067937225
 GameObject:
@@ -871,6 +871,7 @@ GameObject:
   - component: {fileID: 2067937226}
   - component: {fileID: 2067937228}
   - component: {fileID: 2067937227}
+  - component: {fileID: 2067937229}
   m_Layer: 0
   m_Name: Mesh1
   m_TagString: Untagged
@@ -936,6 +937,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2067937225}
   m_Mesh: {fileID: 4300000, guid: b50d079b8525d734784055b97018b7ae, type: 3}
+--- !u!114 &2067937229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2067937225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ff8e924ba56f214d8f59468d58be982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 18.34
+  type: 4
+  offset: {x: -8.35, y: 3.32, z: -6.37}
 --- !u!1001 &2105829702
 Prefab:
   m_ObjectHideFlags: 0

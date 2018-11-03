@@ -42,6 +42,10 @@ Material:
         m_Texture: {fileID: 8900000, guid: 6c11c6ccbb93b4147b3ada5d2bd70f18, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Illum:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: baa8f45b15940ae4aa17522af01bd8a9, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -96,6 +100,7 @@ Material:
     - _Cutoff: 0.46
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Emission: 1
     - _FadeDistance: 67.86
     - _FresnelScale: 0.75
     - _GerstnerIntensity: 1
@@ -110,6 +115,7 @@ Material:
     - _Parallax: 0.02
     - _RefractTexTiling: 0.98
     - _RimPower: 1.5779213
+    - _RimValue: 0.5
     - _Shininess: 0.5242087
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
